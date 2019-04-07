@@ -29,8 +29,75 @@
     </header>
     <main class="page-form">
       <h2 class="header page-form__header page-form__header--header">Подбор программы</h2>
-      <section>
-        <!-- Форма -->
+      <section class="page-form__form form-section">
+        <h3 class="visually-hidden">Анкета</h3>
+        <b class="form-section__title">Заполните анкету и мы подберем программу питания для вашего кота</b>
+        <form action="https://echo.htmlacademy.ru." method="get" class="form-section__form form">
+          <fieldset class="form__cat-data cat-data">
+            <legend class="visually-hidden">Персональные данные Вашего кота</legend>
+            <label class="line-item cat-data__caption">Имя:*
+              <input type="text" class="cat-data__field" name="cat-name" value="Барсик">
+            </label>
+            <label class="line-item cat-data__caption">Вес (кг):*
+              <input type="text" class="cat-data__field" name="cat-weight" value="7">
+            </label>
+            <label class="line-item cat-data__caption">Возраст (лет):
+              <input type="text" class="cat-data__field" name="cat-age" value="7">
+            </label>
+          </fieldset>
+          <fieldset class="form__programm-target programm-target">
+            <legend class="visually-hidden">Цель программы</legend>
+            <input type="radio" class="programm-target__field" name="weight-decrease">
+            <label class="line-item programm-target__caption">Похудение</label>
+            <input type="radio" class="programm-target__field" name="weight-increase">
+            <label class="line-item programm-target__caption">Набор массы</label>
+            <input type="radio" class="programm-target__field" name="advice">
+            <label class="line-item programm-target__caption">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="form__owner-data owner-data">
+            <legend class="group-heading owner-data__heading">Контактные данные(владельца кота)</legend>
+            <label class="line-item owner-data__caption">E-mail:*
+              <input type="text" class="owner-data__field" name="owner-email" value="kuklachev@gmail.com">
+            </label>
+            <label class="line-item owner-data__caption">Телефон:*
+              <input type="text" class="owner-data__field" name="owner-phone" value="8 (960) 900-60-90">
+            </label>
+          </fieldset>
+          <fieldset class="form__comment comment">
+            <legend class="visually-hidden">Поле для написания комментария</legend>
+            <label for="comment__id" class="group-heading comment__caption" >Комментарий</label>
+            <textarea class="comment__field" id="comment__id" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__additional extra-product">
+            <legend class="group-heading extra-product__heading">Дополнительно</legend>
+            <input type="checkbox" class="extra-product__field" name="sugar-changer" checked>
+            <label class="line-item extra-product__caption">Сахарозаменитель</label>
+            <input type="checkbox" class="extra-product__field" name="drink-water">
+            <label class="line-item extra-product__caption">Питьевая вода</label>
+            <input type="checkbox" class="extra-product__field" name="milk">
+            <label class="line-item extra-product__caption">Молоко</label>
+            <input type="checkbox" class="extra-product__field" name="vitamins">
+            <label class="line-item extra-product__caption">Витамины</label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="page-form__location location">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="location__address location-address">
+          <p class="location-address__title">
+            Приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!
+          </p>
+          <p class="location-address__address">
+              ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+              Санкт-Петербург
+          </p>
+        </div>
+        <div class="location__map map">
+            <img src="http://placehold.it/150x100" class="map__image map-img" width="10" height="10" alt="Карта">
+        </div>
       </section>
     </main>
     <footer class="form-footer footer">
