@@ -1,0 +1,8 @@
+.advantages__heading{
+  margin-top: 12px;
+  margin-bottom:35px;
+}
+.advantages__list{
+  @include list-style-reset();
+}
+

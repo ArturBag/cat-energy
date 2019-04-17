@@ -1,0 +1,32 @@
+.page-main{
+  font-family: inherit;
+}
+.page-main__intro,
+.page-main__targets,
+.page-main__advantages,
+.page-main__example{
+  @include mobile-padding();
+}
+.page-main__intro {
+  background-color:#65a93c;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+.page-main-intro__heading {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  @include heading-reset();
+  color:$white-font-color;
+}
+.page-main-intro__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:$white-font-color;
+}
+.page-main-intro__image {
+  display: block;
+  margin: 0 auto;
+}

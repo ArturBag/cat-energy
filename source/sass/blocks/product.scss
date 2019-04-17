@@ -1,0 +1,14 @@
+.product{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product__picture-wrapper,
+.product__info-wrapper {
+  width: 50%;
+}
+.product__button{
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+}

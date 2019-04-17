@@ -3,36 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header form-header">
-      <a href="#" class="form-header__logo logo">
-        <img src="http://placehold.it/150x100" class="logo__image" width="10" height="10" alt="Логотоп магазина">
-        <span class="logo__text logo-text"><b class="logo-text logo-text--bold">Cat</b>Energy</span>
-      </a>
-      <nav class="nav-menu">
-        <div class="nav-menu__wrapper">
-          <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="nav-menu__list menu-list">
-            <li class="menu-list__item">
-              <a href="index.html" class="menu-list__link">Главная</a>
-            </li>
-            <li class="menu-list__item">
-              <a href="catalog.html" class="menu-list__link">Каталог продукции</a>
-            </li>
-            <li class="menu-list__item">
-              <a  class="menu-list__link">Подбор программы</a>
-            </li>
-          </ul>
+      <header class="header">
+        <div class="header__wrapper">
+          <span class="header__logo">
+            <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
+          </span>
+          <nav class="header__nav-menu nav-menu">
+            <button class="nav-menu__button" type="button"><span class="visually-hidden">Открыть меню</span>
+              <svg version="1.1" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve" class="nav-menu__image-btn" width="24" height="18">
+                <rect y="16" width="24" height="2"/>
+                <rect y="8" width="24" height="2"/>
+                <rect width="24" height="2"/>
+              </svg>
+            </button>
+            <div class="nav-menu__wrapper">
+              <ul class="nav-menu__list menu-list">
+                <li class="menu-list__item">
+                  <a class="menu-list__link">Главная</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="catalog.html" class="menu-list__link">Каталог продукции</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="form.html" class="menu-list__link">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </header>
+      </header>
     <main class="page-form">
-      <h2 class="header page-form__header page-form__header--header">Подбор программы</h2>
+      <h2 class="heading page-form__heading page-form__heading--heading">Подбор программы</h2>
       <section class="page-form__form form-section">
         <h3 class="visually-hidden">Анкета</h3>
         <b class="form-section__title">Заполните анкету и мы подберем программу питания для вашего кота</b>
-        <form action="https://echo.htmlacademy.ru." method="get" class="form-section__form form">
+        <form class="form-section__form form" action="https://echo.htmlacademy.ru." method="get" >
           <fieldset class="form__cat-data cat-data">
             <legend class="visually-hidden">Персональные данные Вашего кота</legend>
             <label class="line-item cat-data__caption">Имя:*
@@ -100,8 +110,7 @@
         </div>
       </section>
     </main>
-    <footer class="form-footer footer">
-      <span class="footer__logo-text logo-text"><b class="logo-text logo-text--bold">Cat</b>Energy</span>
+    <footer class="footer">
       <div class="footer__socials-wrapper">
         <ul class="footer__socials socials">
           <li class="socials__item social-icon">
@@ -124,7 +133,7 @@
           </li>
         </ul>
       </div>
-      <p class="form-footer__copyright footer-copyright">
+      <p class="footer__copyright footer-copyright">
         <span class="footer-copyright__source"></span>
         <a href="https://up.htmlacademy.ru/adaptive/16" class="footer-copyright__link" target="_blank">
           <img src="http://placehold.it/150x100" class="footer-copyright__image" width="10" height="10" alt="Ссылка на вэб-сайт HTML Academy">
