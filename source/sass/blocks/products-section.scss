@@ -1,0 +1,28 @@
+.products-section__additional {
+  @include paragraph-reset();
+
+  margin-bottom: 25px;
+}
+
+.products-section__title {
+  display: block;
+  padding-top: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-section__subtitle {
+  font-family: "Arial", sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray-font-color;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+
+.products-section__link {
+  background-color: #f2f2f2;
+  color: $gray-font-color;
+}

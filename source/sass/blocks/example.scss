@@ -1,36 +1,42 @@
-.example{
+.example {
   background-color: #f2f2f2;
 }
-.example__heading{
-  padding-top:30px;
+
+.example__heading {
+  padding-top: 30px;
   margin-bottom: 30px;
 }
-.example__text{
-  @include  paragraph-reset();
+
+.example__text {
+  @include paragraph-reset();
   color: #444444;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   margin-bottom: 27px;
 }
-.example__info-wrapper{
+
+.example__info-wrapper {
   margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
 }
-.example__image{
-  width:320px;
-  min-height: 240px
-  }
-.example__image--after{
+
+.example__image {
+  width: 320px;
+  min-height: 240px;
+}
+
+.example__image--after {
   display: none;
 }
-.example__test{
+
+.example__test {
   display: flex;
   justify-content: space-around;
-
 }
-.example__test-button{
+
+.example__test-button {
   @include button-style-reset();
   text-transform: uppercase;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
 }

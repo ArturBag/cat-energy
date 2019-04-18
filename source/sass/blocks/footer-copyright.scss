@@ -1,11 +1,12 @@
-.footer-copyright{
+.footer-copyright {
   @include paragraph-reset();
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-copyright__source{
+
+.footer-copyright__source {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
 }

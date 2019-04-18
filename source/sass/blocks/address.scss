@@ -1,6 +1,6 @@
-.address{
+.address {
   @include paragraph-reset();
   line-height: 20px;
-  font-family: "Arial";
-  color:#444444;
+  font-family: "Arial", sans-serif;
+  color: #444444;
 }

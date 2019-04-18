@@ -8,35 +8,35 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
-        <span class="header__logo">
-          <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
-        </span>
-        <nav class="header__nav-menu nav-menu">
-          <button class="nav-menu__button" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg version="1.1" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve" class="nav-menu__image-btn" width="24" height="18">
-              <rect y="16" width="24" height="2"/>
-              <rect y="8" width="24" height="2"/>
-              <rect width="24" height="2"/>
-            </svg>
-          </button>
-          <div class="nav-menu__wrapper">
-            <ul class="nav-menu__list menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link">Главная</a>
-              </li>
-              <li class="menu-list__item">
-                <a href="catalog.html" class="menu-list__link">Каталог продукции</a>
-              </li>
-              <li class="menu-list__item">
-                <a href="form.html" class="menu-list__link">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="page-catalog">
+        <div class="header__wrapper">
+          <span class="header__logo">
+            <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
+          </span>
+          <nav class="header__nav-menu nav-menu">
+            <button class="nav-menu__button nav-menu__button--opened nav-menu__button--closed" type="button"><span class="visually-hidden">Открыть меню</span>
+              <svg version="1.1" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve" class="nav-menu__image-btn" width="24" height="18">
+                <rect y="16" width="24" height="2"/>
+                <rect y="8" width="24" height="2"/>
+                <rect width="24" height="2"/>
+              </svg>
+            </button>
+            <div class="nav-menu__wrapper">
+              <ul class="nav-menu__list menu-list">
+                <li class="menu-list__item">
+                  <a class="menu-list__link">Главная</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="catalog.html" class="menu-list__link menu-list__link--active">Каталог продукции</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="form.html" class="menu-list__link">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="page-catalog">
       <div class="page-catalog__wrapper">
         <h2 class="section-heading page-catalog__heading">Каталог продукции</h2>
         <section class="page-catalog__products products-section">
@@ -44,10 +44,12 @@
           <ul class="products-section__list products">
             <li class="products__item product">
               <div class="product__picture-wrapper">
-                <img src="img/chicken-small-mobile@1x.jpg" class="product__image" width="140" height="144" alt="Питание со вкусом курицы весом 500 грамм">
+                <img src="img/chicken-small-mobile@1x.jpg" class="product__image product-image" width="140" height="144" alt="Питание со вкусом курицы весом 500 грамм">
               </div>
               <div class="product__info-wrapper">
-                <h4 class="product__info-heading">Cat Energy Pro 500 Г</h4>
+                <h4 class="product__info-heading">Cat Energy<br>
+                  Pro 500 Г
+                </h4>
                 <table class="product__table table-item">
                   <tr class="table-item__row">
                     <td class="table-item__cell">Объем</td>
@@ -270,8 +272,8 @@
           <p class="catalog-aditional__bonus bonus">
             <span class="bonus__text">Закажите все и получите чехол для кота в подарок!</span>
           </p>
-        </section>
-    </div>
+        </div>
+      </section>
       <section class="page-catalog__location location">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__address location-address">
