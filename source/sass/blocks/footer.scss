@@ -1,0 +1,14 @@
+.footer__logo,
+.footer__socials-wrapper,
+.footer__copyright {
+  @include mobile-padding();
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+}
+
+.footer__copyright {
+  margin-bottom: 28px;
+}

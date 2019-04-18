@@ -1,0 +1,19 @@
+.location__address-wrapper {
+  @include mobile-padding();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+
+.location__title {
+  @include paragraph-reset();
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.location__map {
+  background-color: #fdf7f0;
+}

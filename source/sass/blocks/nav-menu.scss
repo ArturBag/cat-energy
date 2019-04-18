@@ -1,0 +1,8 @@
+.nav-menu__button {
+  @include button-style-reset();
+}
+
+.nav-menu__image-btn {
+  width: 24px;
+  height: 18px;
+}

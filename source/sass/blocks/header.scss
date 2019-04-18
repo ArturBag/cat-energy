@@ -1,0 +1,12 @@
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include mobile-padding();
+}
+
+.header-logo__image {
+  width: 191px;
+  height: 38px;
+}

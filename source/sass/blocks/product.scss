@@ -1,0 +1,33 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.products__item {
+  margin-bottom: 24px;
+  padding-top: 15px;
+}
+
+.product__picture-wrapper,
+.product__info-wrapper {
+  width: 50%;
+}
+
+.product__info-wrapper {
+  margin-bottom: 25px;
+}
+
+.product__info-heading {
+  @include heading-reset();
+
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.product__button {
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+}

@@ -1,0 +1,9 @@
+.menu-list {
+  display: block;
+
+  @include list-style-reset();
+}
+
+.menu-list__link {
+  @include menu-item-style();
+}

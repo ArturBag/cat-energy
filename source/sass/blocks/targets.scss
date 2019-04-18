@@ -1,0 +1,36 @@
+.target-item {
+  background-color: #f2f2f2;
+}
+
+.targets__target {
+  margin-bottom: 20px;
+}
+
+.targets__target--loose {
+  margin-top: 22px;
+}
+
+.target-item__heading {
+  @include heading-reset();
+
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.target-item__text {
+  @include paragraph-reset();
+
+  color: #444444;
+  font-family: "Arial", sans-serif;
+}
+
+.target-item__link {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+}

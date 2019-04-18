@@ -1,0 +1,6 @@
+.result-item {
+  @include paragraph-reset();
+
+  display: flex;
+  flex-direction: column;
+}
