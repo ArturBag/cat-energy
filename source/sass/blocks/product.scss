@@ -10,12 +10,9 @@
   padding-top: 15px;
 }
 
-.product__picture-wrapper,
-.product__info-wrapper {
-  width: 50%;
-}
-
-.product__info-wrapper {
+.product__picture-wrapper--mobile,
+.product__info-wrapper--mobile {
+  min-width: 140px;
   margin-bottom: 25px;
 }
 

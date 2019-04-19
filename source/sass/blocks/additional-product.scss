@@ -1,0 +1,11 @@
+.additional-product__table {
+  min-width: 280px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.additional-product__item-cell {
+  line-height: 14px;
+  color: $gray-font-color;
+  padding-bottom: 15px;
+}
