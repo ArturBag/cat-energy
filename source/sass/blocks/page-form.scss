@@ -1,0 +1,10 @@
+.page-form__wrapper {
+  @include mobile-padding();
+}
+
+.page-form__heading {
+  @include heading-reset();
+
+  margin-top: 12px;
+  margin-bottom: 36px;
+}

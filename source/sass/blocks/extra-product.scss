@@ -1,0 +1,19 @@
+.extra-product {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.extra-product__heading {
+  padding-top: 31px;
+  margin-bottom: 31px;
+}
+
+.extra-product__wrapper-field {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.extra-product__wrapper-field:last-of-type {
+  margin-bottom: 34px;
+}

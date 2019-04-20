@@ -1,7 +1,3 @@
-.page-catalog__wrapper {
-  @include mobile-padding();
-}
-
 .page-catalog__heading {
   @include heading-reset();
 }

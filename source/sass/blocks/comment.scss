@@ -1,0 +1,22 @@
+.comment {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment__caption {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.comment__field {
+  @include margin-padding-rest();
+
+  min-width: 280px;
+  min-height: 150px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $gray-font-color;
+  text-transform: uppercase;
+  padding: 13px;
+}
