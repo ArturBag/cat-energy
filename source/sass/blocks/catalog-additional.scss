@@ -1,0 +1,15 @@
+.catalog-additional__heading {
+  @include heading-reset();
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 32px 0;
+}
+
+.catalog-additional__bonus {
+  @include paragraph-reset();
+
+  background-color: #71b548;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+}

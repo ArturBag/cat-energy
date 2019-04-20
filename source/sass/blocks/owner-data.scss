@@ -1,0 +1,27 @@
+.owner-data {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-data__heading {
+  padding-top: 31px;
+  margin-bottom: 30px;
+}
+
+.owner-data__caption {
+  margin-bottom: 14px;
+}
+
+.owner-data__caption:last-child {
+  margin-bottom: 23px;
+}
+
+.owner-data__field {
+  margin-left: 12px;
+  padding: 13px 40px 13px 13px;
+}
+
+.owner-data__field--phone {
+  margin-left: 10px;
+}

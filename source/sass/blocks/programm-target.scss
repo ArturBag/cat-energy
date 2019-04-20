@@ -1,0 +1,14 @@
+.programm-target {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programm-target__field-wrapper {
+  margin-bottom: 13px;
+  display: flex;
+}
+
+.programm-target__field-wrapper:last-of-type {
+  margin-bottom: 34px;
+}

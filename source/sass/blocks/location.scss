@@ -1,5 +1,4 @@
 .location__address-wrapper {
-  @include mobile-padding();
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,6 +8,7 @@
 
 .location__title {
   @include paragraph-reset();
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;

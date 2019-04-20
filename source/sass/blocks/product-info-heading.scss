@@ -1,0 +1,13 @@
+.product-info-heading {
+  @include heading-reset();
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-product__heading {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
