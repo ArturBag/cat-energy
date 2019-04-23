@@ -2,6 +2,11 @@
   background-color: #f2f2f2;
 }
 
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example__heading {
   padding-top: 30px;
   margin-bottom: 30px;
@@ -22,7 +27,6 @@
 
 .example__image {
   width: 320px;
-  min-height: 240px;
 }
 
 .example__image--after {
@@ -36,7 +40,15 @@
 
 .example__test-button {
   @include button-style-reset();
+
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
 }

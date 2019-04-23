@@ -1,36 +1,76 @@
-.target-item {
-  background-color: #f2f2f2;
-}
-
 .targets__target {
+  padding-bottom: 20px;
+  padding-left: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .targets__target--loose {
   margin-top: 22px;
 }
 
-.target-item__heading {
-  @include heading-reset();
-
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  font-family: inherit;
+.targets__target::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 22px;
 }
 
-.target-item__text {
-  @include paragraph-reset();
-
-  color: #444444;
-  font-family: "Arial", sans-serif;
+.targets__target--loose::before {
+  background: url("../../icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 49px;
 }
 
-.target-item__link {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 16px;
-  text-decoration: none;
-  color: inherit;
+.targets__target--growth::before {
+  background: url("../../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  width: 56px;
+  height: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .targets__target {
+    padding-bottom: 20px;
+    padding-left: 54px;
+    margin-bottom: 30px;
+  }
+
+  .targets__target::before {
+    top: 92px;
+    left: 448px;
+  }
+
+  .targets__target--loose::before {
+    width: 140px;
+    height: 194px;
+  }
+
+  .targets__target--growth::before {
+    top: 134px;
+    left: 413px;
+    // width: 268px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .targets__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .targets__target {
+    width: 570px;
+  }
+
+  .targets__target--loose {
+    margin-top: 0;
+  }
 }

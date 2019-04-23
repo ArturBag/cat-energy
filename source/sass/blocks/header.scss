@@ -1,12 +1,80 @@
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.header__index-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
 
-  @include mobile-padding();
+.header__logo {
+  display: block;
 }
 
 .header-logo__image {
   width: 191px;
   height: 38px;
+}
+
+.header__nav-menu {
+  @include list-style-reset();
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: auto;
+    margin: 0;
+  }
+
+  .header__index-wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 192px;
+  }
+
+  .header__nav-menu {
+    width: 470px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: auto;
+    margin: 0;
+  }
+
+  .header__index-wrapper {
+    width: 1220px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .header__index-wrapper::before {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 696px;
+    background-color: #63a73a;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .header__logo {
+    width: 570px;
+  }
+
+  .header__nav-menu {
+    width: 610px;
+    text-align: center;
+  }
 }
