@@ -9,3 +9,19 @@
   margin-top: 12px;
   margin-bottom: 36px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .page-form__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}

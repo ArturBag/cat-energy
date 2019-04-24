@@ -34,4 +34,9 @@
     color: $white-font-color;
     font-weight: 400;
   }
+
+  .menu-list__link--catalog,
+  .menu-list__link--form {
+    color: inherit;
+  }
 }

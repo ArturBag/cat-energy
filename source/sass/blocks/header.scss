@@ -1,4 +1,6 @@
-.header__index-wrapper {
+.header__index-wrapper,
+.header__сatalog-wrapper,
+.header__form-wrapper {
   width: 280px;
   margin: 0 auto;
 }
@@ -22,7 +24,9 @@
     margin: 0;
   }
 
-  .header__index-wrapper {
+  .header__index-wrapper,
+  .header__сatalog-wrapper,
+  .header__form-wrapper {
     width: 708px;
     margin: 0 auto;
     padding: 0;
@@ -45,13 +49,14 @@
     margin: 0;
   }
 
-  .header__index-wrapper {
+  .header__index-wrapper,
+  .header__сatalog-wrapper,
+  .header__form-wrapper {
     width: 1220px;
     padding: 0 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    position: relative;
   }
 
   .header__index-wrapper::before {
@@ -67,6 +72,14 @@
     top: 0;
     right: 0;
     z-index: 1;
+  }
+
+  .header__сatalog-wrapper {
+    width: 1220px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .header__logo {
