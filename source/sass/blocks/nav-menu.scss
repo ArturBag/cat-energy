@@ -12,3 +12,12 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nav-menu__list {
+    width: 570px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+}

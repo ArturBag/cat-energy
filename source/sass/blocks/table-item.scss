@@ -2,9 +2,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-@media (min-width: $tablet-width) {
-  .table-item {
-    width: 45%;
-  }
-}

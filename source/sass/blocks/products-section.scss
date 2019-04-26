@@ -1,18 +1,19 @@
+.products-section__wrapper {
+  @include mobile-content-size();
+}
+
 .products__item--additional {
   margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .products-section__wrapper {
-    width: 708px;
-    margin: 0 auto;
+    @include tablet-content-size();
   }
 }
 
 @media (min-width: $desktop-width) {
   .products-section__wrapper {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
+    @include desktop-content-size();
   }
 }

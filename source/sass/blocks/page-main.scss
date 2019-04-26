@@ -10,10 +10,12 @@
   background-position: 50% 0%;
 }
 
+.page-main__wrapper-intro {
+  @include mobile-content-size();
+}
+
 .page-main__intro-wrapper {
   text-align: center;
-  width: 280px;
-  margin: 0 auto;
 }
 
 .page-main-intro__heading {
@@ -54,13 +56,13 @@
 
   .page-main__intro-wrapper {
     text-align: left;
-    width: 708px;
+    width: auto;
     padding-left: 90px;
   }
 
   .page-main__wrapper-intro {
-    width: 708px;
-    margin: 0 auto;
+    @include tablet-content-size();
+
     display: flex;
     flex-direction: column;
   }
@@ -92,9 +94,8 @@
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper-intro {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
+    @include desktop-content-size();
+
     display: flex;
     flex-direction: column;
     position: relative;

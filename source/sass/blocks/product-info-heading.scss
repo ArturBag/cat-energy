@@ -17,3 +17,9 @@
     width: 45%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-info-heading {
+    width: 245px;
+  }
+}

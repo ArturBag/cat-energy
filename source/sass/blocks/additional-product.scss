@@ -1,5 +1,5 @@
 .additional-product__table {
-  min-width: 280px;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -22,5 +22,26 @@
   .additional-product__button {
     display: block;
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product__wrapper {
+    padding: 0;
+    width: 895px;
+  }
+
+  .catalog-additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-product__table {
+    width: 285px;
+  }
+
+  .additional-product__button {
+    width: 245px;
+    margin: 0;
   }
 }

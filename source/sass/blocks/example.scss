@@ -3,8 +3,7 @@
 }
 
 .example__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  @include mobile-content-size();
 }
 
 .example__heading {
@@ -26,11 +25,9 @@
 }
 
 .example__image {
-  width: 320px;
-}
-
-.example__image--after {
-  display: none;
+  &--after {
+    display: none;
+  }
 }
 
 .example__test {
@@ -48,7 +45,10 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
-    width: 708px;
-    margin: 0 auto;
+    @include tablet-content-size();
   }
+}
+
+@media (min-width: $desktop-width) {
+  @include desktop-content-size();
 }

@@ -39,3 +39,21 @@
   font-weight: 400;
   color: inherit;
 }
+
+@mixin mobile-content-size() {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin tablet-content-size() {
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@mixin desktop-content-size() {
+  min-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}

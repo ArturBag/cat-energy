@@ -1,7 +1,7 @@
 .page-catalog__heading {
   @include heading-reset();
-  width: 280px;
-  margin: 0 auto;
+  @include mobile-content-size();
+
   padding-top: 18px;
   padding-bottom: 23px;
 }
@@ -16,7 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .page-catalog__heading {
-    width: 708px;
+    @include tablet-content-size();
+
     padding-top: 60px;
     padding-bottom: 155px;
   }
@@ -24,9 +25,8 @@
 
 @media (min-width: $desktop-width) {
   .page-catalog__heading {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
+    @include desktop-content-size();
+
     padding-top: 60px;
     padding-bottom: 155px;
   }

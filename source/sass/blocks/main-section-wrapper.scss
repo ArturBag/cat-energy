@@ -1,21 +1,15 @@
 .main-section-wrapper {
-  padding: 0;
-  width: 280px;
-  margin: 0 auto;
+  @include mobile-content-size();
 }
 
 @media (min-width: $tablet-width) {
   .main-section-wrapper {
-    padding: 0;
-    width: 708px;
-    margin: 0 auto;
+    @include tablet-content-size();
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-section-wrapper {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
+    @include desktop-content-size();
   }
 }
