@@ -1,4 +1,6 @@
 .location__address-wrapper {
+  @include mobile-content-size();
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,4 +18,10 @@
 
 .location__map {
   background-color: #fdf7f0;
+}
+
+@media (min-width: $tablet-width) {
+  .location__address-wrapper {
+    @include tablet-content-size();
+  }
 }

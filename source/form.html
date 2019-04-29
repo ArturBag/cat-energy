@@ -8,31 +8,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
-        <span class="header__logo">
-          <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
-        </span>
-        <nav class="header__nav-menu nav-menu">
-          <button class="nav-menu__button nav-menu__button--opened nav-menu__button--closed" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg version="1.1" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve" class="nav-menu__image-btn" width="24" height="18">
-              <rect y="16" width="24" height="2"/>
-              <rect y="8" width="24" height="2"/>
-              <rect width="24" height="2"/>
+      <div class="header__form-wrapper">
+        <div class="header__items-wrapper">
+          <a class="header__logo">
+            <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
+          </a>
+          <button class="header-menu__button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg version="1.1" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;"
+              xml:space="preserve" class="header-menu__image-btn" width="24" height="18">
+              <rect y="16" width="24" height="2" />
+              <rect y="8" width="24" height="2" />
+              <rect width="24" height="2" />
             </svg>
           </button>
-          <div class="nav-menu__wrapper">
-            <ul class="nav-menu__list menu-list">
-              <li class="menu-list__item">
-                <a href="index.html" class="menu-list__link">Главная</a>
-              </li>
-              <li class="menu-list__item">
-                <a href="catalog.html" class="menu-list__link">Каталог продукции</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link menu-list__link--active">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <nav class="header__nav-menu nav-menu">
+          <ul class="nav-menu__list menu-list">
+            <li class="menu-list__item">
+              <a href="index.html" class="menu-list__link menu-list__link--form">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="catalog.html" class="menu-list__link menu-list__link--form">Каталог продукции</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--form menu-list__link--active">Подбор программы</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>

@@ -1,9 +1,43 @@
 .menu-list {
-  display: block;
-
   @include list-style-reset();
+}
+
+.menu-list__item {
+  padding: 25px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .menu-list__link {
   @include menu-item-style();
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-list__item {
+    border: none;
+  }
+
+  .menu-list__link {
+    font-size: 18px;
+    line-height: 24.86px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list__link {
+    font-size: 20px;
+    line-height: 24.86px;
+    color: $white-font-color;
+    font-weight: 400;
+  }
+
+  .menu-list__link--catalog,
+  .menu-list__link--form {
+    color: inherit;
+  }
 }

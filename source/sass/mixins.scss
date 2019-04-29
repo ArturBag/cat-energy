@@ -40,6 +40,23 @@
   color: inherit;
 }
 
-@mixin mobile-padding() {
-  padding: 0 6.25%;
+@mixin mobile-content-size() {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin tablet-content-size() {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@mixin desktop-content-size() {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
 }

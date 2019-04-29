@@ -1,5 +1,5 @@
 .footer-wrapper {
-  @include mobile-padding();
+  @include mobile-content-size();
 }
 
 .footer__logo {
@@ -9,4 +9,16 @@
 
 .footer__copyright {
   margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-wrapper {
+    @include tablet-content-size();
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-wrapper {
+    @include desktop-content-size();
+  }
 }

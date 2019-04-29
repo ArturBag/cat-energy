@@ -1,12 +1,116 @@
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.header__items-wrapper {
+  @include mobile-content-size();
+}
 
-  @include mobile-padding();
+.header__logo {
+  display: inline-block;
+  width: 75%;
+  vertical-align: middle;
+  padding-top: 11px;
+  padding-bottom: 16px;
 }
 
 .header-logo__image {
   width: 191px;
   height: 38px;
+}
+
+.header-menu__button {
+  @include button-style-reset();
+  width: 20%;
+}
+
+.header-menu__image-btn {
+  width: 24px;
+  height: 18px;
+}
+
+.header__nav-menu {
+  @include list-style-reset();
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: auto;
+    margin: 0;
+  }
+
+  .header__items-wrapper {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__index-wrapper,
+  .header__сatalog-wrapper,
+  .header__form-wrapper {
+    @include tablet-content-size();
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 192px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-menu__button {
+    display: none;
+  }
+
+  .header__nav-menu {
+    width: 470px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: auto;
+    margin: 0;
+  }
+
+  .header__index-wrapper,
+  .header__сatalog-wrapper,
+  .header__form-wrapper {
+    @include desktop-content-size();
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__index-wrapper::before {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 696px;
+    background-color: #63a73a;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    margin-right: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .header__сatalog-wrapper {
+    @include desktop-content-size();
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 570px;
+  }
+
+  .header__nav-menu {
+    width: 570px;
+    text-align: center;
+  }
 }

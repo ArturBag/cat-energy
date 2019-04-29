@@ -1,8 +1,12 @@
-.nav-menu__button {
-  @include button-style-reset();
+.nav-menu {
+  text-align: center;
 }
 
-.nav-menu__image-btn {
-  width: 24px;
-  height: 18px;
+@media (min-width: $desktop-width) {
+  .nav-menu__list {
+    width: 570px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
 }

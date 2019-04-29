@@ -1,28 +1,19 @@
-.products-section__additional {
-  @include paragraph-reset();
+.products-section__wrapper {
+  @include mobile-content-size();
+}
 
+.products__item--additional {
   margin-bottom: 25px;
 }
 
-.products-section__title {
-  display: block;
-  padding-top: 80px;
-  text-transform: uppercase;
-  text-align: center;
+@media (min-width: $tablet-width) {
+  .products-section__wrapper {
+    @include tablet-content-size();
+  }
 }
 
-.products-section__subtitle {
-  font-family: "Arial", sans-serif;
-  display: block;
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  color: $gray-font-color;
-  font-weight: 400;
-  margin-bottom: 23px;
-}
-
-.products-section__link {
-  background-color: #f2f2f2;
-  color: $gray-font-color;
+@media (min-width: $desktop-width) {
+  .products-section__wrapper {
+    @include desktop-content-size();
+  }
 }

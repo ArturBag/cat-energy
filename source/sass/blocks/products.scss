@@ -1,3 +1,20 @@
 .products {
   @include list-style-reset();
 }
+
+.products__item {
+  margin-bottom: 24px;
+  padding-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product__item--additional {
+    background-color: #ffffff;
+  }
+}

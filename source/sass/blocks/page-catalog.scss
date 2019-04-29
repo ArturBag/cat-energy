@@ -1,3 +1,33 @@
 .page-catalog__heading {
   @include heading-reset();
+  @include mobile-content-size();
+
+  padding-top: 18px;
+  padding-bottom: 23px;
+}
+
+.page-catalog__location {
+  background-color: #f2f2f2;
+}
+
+.page-catalog__wrapper {
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__heading {
+    @include tablet-content-size();
+
+    padding-top: 60px;
+    padding-bottom: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__heading {
+    @include desktop-content-size();
+
+    padding-top: 60px;
+    padding-bottom: 155px;
+  }
 }
