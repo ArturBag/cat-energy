@@ -1,16 +1,5 @@
-.nav-menu__button {
-  @include button-style-reset();
-}
-
-.nav-menu__image-btn {
-  width: 24px;
-  height: 18px;
-}
-
-@media (min-width: $tablet-width) {
-  .nav-menu__button {
-    display: none;
-  }
+.nav-menu {
+  text-align: center;
 }
 
 @media (min-width: $desktop-width) {

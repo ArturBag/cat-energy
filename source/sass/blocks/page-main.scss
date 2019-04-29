@@ -93,6 +93,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__intro {
+    padding-bottom: 250px;
+  }
+
   .page-main__wrapper-intro {
     @include desktop-content-size();
 

@@ -6,15 +6,3 @@
 .advantages__list {
   @include list-style-reset();
 }
-
-@media (min-width: $tablet-width) {
-  .advantages__wrapper {
-    @include tablet-content-size();
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__wrapper {
-    @include desktop-content-size();
-  }
-}
