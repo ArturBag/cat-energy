@@ -1,13 +1,13 @@
 .header__items-wrapper {
   @include mobile-content-size();
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__logo {
-  display: inline-block;
-  width: 75%;
-  vertical-align: middle;
-  padding-top: 11px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 13px;
 }
 
 .header-logo__image {
@@ -17,7 +17,6 @@
 
 .header-menu__button {
   @include button-style-reset();
-  width: 20%;
 }
 
 .header-menu__image-btn {
@@ -27,6 +26,7 @@
 
 .header__nav-menu {
   @include list-style-reset();
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

@@ -3,19 +3,22 @@
 }
 
 .page-main__intro {
+  padding-bottom: 22px;
+}
+
+.page-main__wrapper-intro {
+  @include mobile-content-size();
+  margin-top: -164px;
+}
+
+.page-main__intro-wrapper {
   background-color: #63a73a;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   text-align: center;
   background-position: 50% 0%;
-}
-
-.page-main__wrapper-intro {
-  @include mobile-content-size();
-}
-
-.page-main__intro-wrapper {
-  text-align: center;
+  padding-bottom: 165px;
+  margin-bottom: 28px;
 }
 
 .page-main-intro__heading {
@@ -25,7 +28,7 @@
   font-weight: 400;
   line-height: 36px;
   padding-top: 29px;
-  margin-bottom: 26px;
+  margin-bottom: 21px;
   color: $white-font-color;
 }
 
@@ -40,12 +43,11 @@
 .page-main-intro__image {
   display: block;
   margin: 0 auto;
-  margin-top: 29px;
 }
 
 .page-main-intro__button {
   width: 100%;
-  padding: 0 12px;
+  padding-top: 12px;
 }
 
 @media (min-width: $tablet-width) {

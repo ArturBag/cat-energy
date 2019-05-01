@@ -7,15 +7,20 @@
 }
 
 .example__heading {
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 18px;
+  margin-bottom: 25px;
+}
+
+.example__wrapper-item {
+  margin-bottom: 28px;
 }
 
 .example__text {
   @include paragraph-reset();
   color: #444444;
   font-family: "Arial", sans-serif;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  width: 99%;
 }
 
 .example__info-wrapper {
@@ -24,7 +29,23 @@
   justify-content: space-between;
 }
 
+.example__description-result {
+  margin-bottom: 21px;
+}
+
+.example__expenses {
+  display: block;
+  text-align: center;
+}
+
+.example-result__image {
+  @include paragraph-reset();
+}
+
 .example__image {
+  width: 320px;
+  height: 240px;
+
   &--after {
     display: none;
   }
