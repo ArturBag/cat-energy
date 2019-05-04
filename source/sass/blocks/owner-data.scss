@@ -5,23 +5,26 @@
 }
 
 .owner-data__heading {
-  padding-top: 31px;
-  margin-bottom: 30px;
+  padding-top: 28px;
+  margin-bottom: 34px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+    top: 55%;
+    right: -20px;
+  }
 }
 
 .owner-data__caption {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
+  position: relative;
 }
 
 .owner-data__caption:last-child {
   margin-bottom: 23px;
-}
-
-.owner-data__field {
-  margin-left: 12px;
-  padding: 13px 40px 13px 13px;
-}
-
-.owner-data__field--phone {
-  margin-left: 10px;
 }

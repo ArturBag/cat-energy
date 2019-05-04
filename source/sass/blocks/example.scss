@@ -24,7 +24,7 @@
 }
 
 .example__info-wrapper {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -33,13 +33,26 @@
   margin-bottom: 21px;
 }
 
+.example__result {
+  margin-bottom: 36px;
+}
+
 .example__expenses {
   display: block;
   text-align: center;
 }
 
+.example__test {
+  display: flex;
+  width: 197px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-bottom: 36px;
+}
+
 .example-result__image {
   @include paragraph-reset();
+  width: auto;
 }
 
 .example__image {
@@ -51,17 +64,16 @@
   }
 }
 
-.example__test {
-  display: flex;
-  justify-content: space-around;
-}
-
 .example__test-button {
   @include button-style-reset();
 
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+}
+
+.example-test__decoration {
+  width: 84px;
 }
 
 @media (min-width: $tablet-width) {

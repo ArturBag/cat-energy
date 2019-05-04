@@ -5,8 +5,17 @@
 }
 
 .extra-product__heading {
-  padding-top: 31px;
-  margin-bottom: 31px;
+  padding-top: 25px;
+  margin-bottom: 35px;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 136px;
+    top: 78%;
+    right: -20px;
+  }
 }
 
 .extra-product__wrapper-field {
@@ -16,4 +25,29 @@
 
 .extra-product__wrapper-field:last-of-type {
   margin-bottom: 34px;
+}
+
+.extra-product__caption {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    margin-right: 16px;
+  }
+}
+
+.extra-product input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  border-right: 2px solid #68b738;
+  border-bottom: 2px solid #68b738;
+  top: 1px;
+  left: 9px;
+  transform: rotate(45deg);
 }

@@ -1,9 +1,13 @@
+.page-catalog__heading-wrapper {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .page-catalog__heading {
   @include heading-reset();
   @include mobile-content-size();
 
-  padding-top: 18px;
-  padding-bottom: 23px;
+  padding-top: 15px;
+  padding-bottom: 27px;
 }
 
 .page-catalog__location {

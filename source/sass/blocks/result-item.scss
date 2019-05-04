@@ -2,33 +2,8 @@
   @include paragraph-reset();
 
   width: 124px;
-  border: 1px solid #cdcdcd;
-  border-bottom: none;
-  border-radius: 3px;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 1px;
-    background-color: #cdcdcd;
-    left: 0;
-    bottom: 0;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 1px;
-    background-color: #cdcdcd;
-    right: 0;
-    bottom: 0;
-  }
 }
 
 .result-item__title {
@@ -37,11 +12,20 @@
   text-transform: uppercase;
   color: inherit;
   padding-top: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  padding-bottom: 16px;
 }
 
-.result-item__text {
+.result-item__subtitle {
   font-size: 12px;
   line-height: 12px;
   color: #444444;
   font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  width: 85px;
+  margin: 0 auto;
+  margin-top: -10px;
 }

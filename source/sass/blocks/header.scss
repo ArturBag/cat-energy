@@ -1,3 +1,9 @@
+.header__index-wrapper,
+.header__сatalog-wrapper,
+.header__form-wrapper {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .header__items-wrapper {
   @include mobile-content-size();
 

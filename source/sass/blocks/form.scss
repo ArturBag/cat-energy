@@ -1,11 +1,19 @@
-.form {
-  margin-bottom: 22px;
-}
-
-.form-section__form {
-  margin-top: 38px;
-}
-
 .form__button {
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__cat-data {
+  margin-bottom: 20px;
+}
+
+.form__owner-data {
+  margin-bottom: 4px;
+}
+
+.comment__caption::after {
+  width: 158px;
+  top: 60%;
+  right: -20px;
 }

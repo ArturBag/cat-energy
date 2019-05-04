@@ -2,17 +2,13 @@
   border: none;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .cat-data__caption {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .cat-data__caption:last-child {
   margin-bottom: 23px;
-}
-
-.cat-data__field {
-  margin-left: 15px;
-  padding: 13px 0 13px 13px;
 }

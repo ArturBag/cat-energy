@@ -51,6 +51,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0 auto;
+
+  &--loose {
+    width: 220px;
+  }
 
   &--growth {
     padding-top: 32px;
@@ -64,7 +69,6 @@
   text-align: left;
   color: #444444;
   font-family: "Arial", sans-serif;
-  width: 92%;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
   margin-bottom: 19px;

@@ -1,15 +1,23 @@
-.page-form__wrapper {
-  width: 280px;
-  margin: 0 auto;
+.page-form__form {
+  margin-bottom: 31px;
+}
+
+.page-form-wrapper {
+  @include mobile-content-size();
 }
 
 .page-form__heading {
   @include heading-reset();
 
-  margin-top: 12px;
-  margin-bottom: 36px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 14px;
+  margin-bottom: 25px;
 }
 
+.page-form__location {
+  background-color: #f2f2f2;
+}
 
 @media (min-width: $tablet-width) {
   .page-form__wrapper {

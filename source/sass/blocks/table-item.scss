@@ -1,4 +1,26 @@
+.table-item {
+  display: flex;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-item tbody {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  width: 100%;
+}
+
 .table-item__row {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.table-item__cell {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
 }

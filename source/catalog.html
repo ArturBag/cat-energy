@@ -10,7 +10,7 @@
     <header class="header">
       <div class="header__сatalog-wrapper">
         <div class="header__items-wrapper">
-          <a class="header__logo">
+          <a href="index.html" class="header__logo">
             <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
           </a>
           <button class="header-menu__button" type="button">
@@ -39,7 +39,9 @@
       </div>
       </header>
       <main class="page-catalog">
-        <h2 class="section-heading page-catalog__heading">Каталог продукции</h2>
+        <div class="page-catalog__heading-wrapper">
+          <h2 class="section-heading page-catalog__heading">Каталог продукции</h2>
+        </div>
         <section class="page-catalog__products products-section">
           <div class="products-section__wrapper">
             <h3 class="visually-hidden">Список товаров</h3>
@@ -68,7 +70,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product">
@@ -95,7 +97,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product">
@@ -122,7 +124,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product">
@@ -149,7 +151,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product">
@@ -176,7 +178,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product">
@@ -203,7 +205,7 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product">
@@ -230,15 +232,15 @@
                       </tr>
                     </table>
                   </div>
-                  <a href="#" class="button product__button">Заказать</a>
+                  <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
               <li class="products__item product product__item--additional">
-                <div class="product__item-wrapper">
+                <div class="product__item-wrapper product__item-wrapper--more">
                   <span class="product__additional-decoration"></span>
                   <b class="product__additional-title">Показать еще 100500 товаров</b>
                   <span class="product__additional-subtitle">На самом деле вкусов гораздо больше!</span>
-                  <a href="#" class="button product__button product__additional-link">Показать все</a>
+                  <a href="#" class="button catalog-button product__additional-link">Показать все</a>
                 </div>
               </li>
             </ul>
@@ -258,7 +260,7 @@
                         <td class="table-item__cell additional-product__item-cell">200 р.</td>
                       </tr>
                     </table>
-                    <a href="#" class="button additional-product__button">Заказать</a>
+                    <a href="#" class="button catalog-button additional-product__button">Заказать</a>
                   </div>
                 </li>
                 <li class="additional-list__item additional-product">
@@ -270,7 +272,7 @@
                         <td class="table-item__cell additional-product__item-cell">50 р.</td>
                       </tr>
                     </table>
-                    <a href="#" class="button additional-product__button">Заказать</a>
+                    <a href="#" class="button catalog-button additional-product__button">Заказать</a>
                   </div>
                 </li>
                 <li class="additional-list__item additional-product">
@@ -282,7 +284,7 @@
                         <td class="table-item__cell additional-product__item-cell">100 р.</td>
                       </tr>
                     </table>
-                    <a href="#" class="button additional-product__button">Заказать</a>
+                    <a href="#" class="button catalog-button additional-product__button">Заказать</a>
                   </div>
                 </li>
                 <li class="additional-list__item additional-product">
@@ -294,7 +296,7 @@
                         <td class="table-item__cell additional-product__item-cell">300 р.</td>
                       </tr>
                     </table>
-                    <a href="#" class="button additional-product__button">Заказать</a>
+                    <a href="#" class="button catalog-button additional-product__button">Заказать</a>
                   </div>
                 </li>
               </ul>
@@ -308,7 +310,7 @@
         </div>
         <section class="page-catalog__location location">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <div class="location__address-wrapper">
+          <div class="block-wrapper location__page-catalog location__address-wrapper">
             <p class="location__title address-title">
               Приглашаем<br>
               к сотрудничеству<br>
