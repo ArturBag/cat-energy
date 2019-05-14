@@ -54,3 +54,55 @@
     right: 13px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .line-item {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
+
+  .line-item__title {
+    &--name {
+      width: 71px;
+    }
+
+    &--weight {
+      width: 112px;
+    }
+
+    &--age {
+      width: 171px;
+    }
+
+    &--email {
+      width: 95px;
+    }
+
+    &--phone {
+      width: 115px;
+    }
+  }
+
+  .line-item__owner-field {
+    &--email {
+      padding: 11px 0 10px 20px;
+    }
+
+    &--phone {
+      padding: 11px 0 10px 20px;
+    }
+  }
+
+  .line-item__icon {
+    &--mail {
+      top: 39%;
+      right: 19px;
+    }
+
+    &--phone {
+      top: 36%;
+      right: 16px;
+    }
+  }
+}

@@ -24,3 +24,23 @@
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .table-item__cell {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .table-item__row {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 6px;
+
+    &:nth-child(2) {
+      padding-top: 7px;
+    }
+
+    &:nth-child(3) {
+      padding-top: 8px;
+    }
+  }
+}

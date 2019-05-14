@@ -9,3 +9,11 @@
   box-sizing: border-box;
   padding: 11.3px 0 13px 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-field {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 11px;
+  }
+}

@@ -1,4 +1,6 @@
 .section-heading {
+  @include heading-reset();
+
   font-size: 36px;
   line-height: 60px;
   color: inherit;

@@ -12,9 +12,6 @@
   &::after {
     content: "";
     position: absolute;
-    width: 99px;
-    height: 3px;
-    background-color: #68b738;
     top: 55%;
     right: -20px;
   }
@@ -27,4 +24,27 @@
 
 .owner-data__caption:last-child {
   margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-data__heading {
+    padding-top: 75px;
+    margin-bottom: 75px;
+    width: 100%;
+
+    &::after {
+      width: 146px;
+      top: 87%;
+      right: -68px;
+    }
+
+    &::before {
+      top: 87%;
+      left: -71px;
+    }
+  }
+
+  .owner-data__caption {
+    margin-bottom: 18px;
+  }
 }

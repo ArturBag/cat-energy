@@ -12,3 +12,18 @@
     background-color: #68b738;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .group-heading {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 31px;
+      height: 3px;
+      background-color: #68b738;
+    }
+  }
+}

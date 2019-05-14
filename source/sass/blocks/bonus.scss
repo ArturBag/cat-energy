@@ -1,7 +1,5 @@
 .bonus {
   text-align: center;
-  // position: relative;
-  // // z-index: -1;
 
   &::before {
     content: "";
@@ -21,4 +19,21 @@
   font-weight: 400;
   font-family: "Arial", sans-serif;
   padding-bottom: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .bonus {
+    &::before {
+      margin: 0;
+      margin-left: 91px;
+      margin-top: 1px;
+    }
+  }
+
+  .bonus__text {
+    padding-bottom: 0;
+    margin-right: 126px;
+    margin-top: 8px;
+    text-align: left;
+  }
 }

@@ -8,21 +8,27 @@
   padding-bottom: 26px;
 }
 
-.location__title {
-  @include paragraph-reset();
-
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 .location__map {
   background-color: #fdf7f0;
+  width: 320px;
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {
   .location__address-wrapper {
     @include tablet-content-size();
+
+    padding-top: 65px;
+    padding-bottom: 57px;
+    justify-content: space-around;
+  }
+
+  .location__address {
+    text-align: right;
+  }
+
+  .location__map {
+    width: 767px;
+    height: 394px;
   }
 }

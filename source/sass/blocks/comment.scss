@@ -9,6 +9,11 @@
   margin-bottom: 35px;
 }
 
+.comment textarea {
+  border: none;
+  border: 1px solid #cdcdcd;
+}
+
 .comment__field {
   @include margin-padding-rest();
 
@@ -19,4 +24,29 @@
   color: $gray-font-color;
   text-transform: uppercase;
   padding: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__caption {
+    margin-bottom: 76px;
+
+    &::before {
+      top: 60%;
+      left: -71px;
+    }
+
+    &::after {
+      width: 76%;
+      top: 60%;
+      right: -68px;
+    }
+  }
+
+  .comment__field {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
+    padding: 9px 0px 0px 18px;
+  }
 }

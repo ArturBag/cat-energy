@@ -9,11 +9,20 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
   padding-top: 12px;
   padding-bottom: 13px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header-logo__image {
@@ -25,13 +34,27 @@
   @include button-style-reset();
 }
 
-.header-menu__image-btn {
+.header__nav-menu {
+  @include list-style-reset();
+}
+
+.header .header-menu__button {
+  background-image: url("../../img/icon-close.svg");
+  width: 18px;
+  height: 18px;
+}
+
+.header .header__nav-menu {
+  display: block;
+}
+
+.header__menu-hidden .header-menu__button {
+  background-image: url("../../img/icon-mobile-menu.svg");
   width: 24px;
   height: 18px;
 }
 
-.header__nav-menu {
-  @include list-style-reset();
+.header__menu-hidden .header__nav-menu {
   display: none;
 }
 
@@ -39,6 +62,10 @@
   .header {
     width: auto;
     margin: 0;
+  }
+
+  .header__menu-hidden .header__nav-menu {
+    display: block;
   }
 
   .header__items-wrapper {
@@ -56,12 +83,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    border-bottom: none;
   }
 
   .header__logo {
-    width: 192px;
-    padding-top: 0;
+    padding-top: 23px;
     padding-bottom: 0;
+  }
+
+  .header-logo__image {
+    width: 173px;
+    height: 58px;
   }
 
   .header-menu__button {
@@ -69,7 +101,7 @@
   }
 
   .header__nav-menu {
-    width: 470px;
+    width: 440px;
   }
 }
 
@@ -88,20 +120,23 @@
     justify-content: space-between;
   }
 
-  .header__index-wrapper::before {
-    content: "";
-    display: block;
-    width: 720px;
-    height: 696px;
-    background-color: #63a73a;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    margin-right: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+  .header__index-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-color: #63a73a;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      // background-position: 50% 0%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
   }
 
   .header__сatalog-wrapper {

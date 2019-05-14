@@ -20,3 +20,14 @@
   display: block;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .form-section__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-section__form {
+    margin-top: 64px;
+  }
+}

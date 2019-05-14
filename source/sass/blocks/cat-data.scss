@@ -12,3 +12,29 @@
 .cat-data__caption:last-child {
   margin-bottom: 23px;
 }
+
+@media (min-width: $tablet-width) {
+  .cat-data {
+    border-bottom:none;
+  }
+
+  .cat-data__field {
+    &--name {
+      padding-left: 19px;
+      padding-bottom: 10px;
+    }
+
+    &--weight {
+      padding: 11px 0 9px 18px;
+    }
+
+    &--age {
+      padding: 11px 0 9px 19px;
+    }
+
+  }
+
+  .cat-data__caption {
+    margin-bottom: 20px;
+  }
+}

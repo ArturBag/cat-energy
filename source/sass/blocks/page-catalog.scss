@@ -19,11 +19,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-catalog__wrapper {
+    margin-bottom: 75px;
+  }
+
+  .page-catalog__heading-wrapper {
+    border-bottom: none;
+    margin-bottom: 165px;
+  }
   .page-catalog__heading {
     @include tablet-content-size();
 
-    padding-top: 60px;
-    padding-bottom: 155px;
+    padding-top: 56px;
+  }
+
+  .page-catalog__products {
+    margin-bottom: -75px;
   }
 }
 

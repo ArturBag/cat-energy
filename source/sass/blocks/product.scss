@@ -70,6 +70,8 @@
 .product__image {
   display: block;
   height: 100%;
+  width: 140px;
+  height: 144px;
 }
 
 .product__info-heading {
@@ -82,10 +84,28 @@
   margin-bottom: 9px;
 }
 
+.product__button {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 
 .product__additional-link {
   background-color: #f2f2f2;
   color: $gray-font-color;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -95,20 +115,112 @@
     width: 324px;
     background-color: #f2f2f2;
     padding-bottom: 40px;
+    border-bottom: none;
+    margin-bottom: 140px;
   }
 
   .product__item--additional {
     background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    padding-top: 42px;
   }
 
   .product__item-wrapper {
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 35px;
+  }
+
+  .product__picture-wrapper {
+    width: auto;
+    margin-bottom: 1px;
+    position: absolute;
+    width: 100%;
+
+    &--small {
+      top: -47px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--big {
+      top: -82px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .product__info-wrapper {
+    width: 100%;
+  }
+
+  .product__info-heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 163px;
+    padding-bottom: 26px;
+  }
+
+  .product__info-heading br {
+    display: none;
+  }
+
+  .product__table {
+    margin-bottom: 32px;
+  }
+
+  .product__image {
+    &--small {
+      width: 324px;
+      height: 174px;
+    }
+
+    &--big {
+      width: 324px;
+      height: 208px;
+    }
   }
 
   .product__table {
     display: flex;
+  }
+
+  .product__item-wrapper {
+    &--more {
+      &::before {
+        width: 60px;
+        left: 50.5%;
+        transform: translateX(-50.5%);
+      }
+
+      &::after {
+        width: 60px;
+        left: 41%;
+      }
+    }
+  }
+
+  .product__additional-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 70%;
+    text-align: center;
+    padding-top: 121px;
+    letter-spacing: 0.1px;
+    margin-bottom: 29px;
+  }
+
+  .product__additional-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    width: 75%;
+    margin-bottom: 87px;
   }
 }
 

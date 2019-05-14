@@ -2,11 +2,36 @@
   background-color: #f2f2f2;
 }
 
+.target-item__heading {
+  @include heading-reset();
+
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+
+  &--loose {
+    padding: 30px 0;
+    padding-left: 10px;
+  }
+
+  &--growth {
+    padding: 30px 0;
+    padding-left: 38px;
+  }
+}
+
 .target-item__icon {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 12px;
-  position: relative;
+  position: absolute;
   z-index: 2;
   font-size: 0;
 
@@ -19,8 +44,16 @@
     background-color: #68b738;
     z-index: -1;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 60%;
+    transform: translate(-60%, -50%);
+  }
+
+  &--loose {
+    left: 10px;
+  }
+
+  &--growth {
+    left: -8px;
   }
 }
 
@@ -38,31 +71,6 @@
   }
 }
 
-.target-item__heading {
-  @include heading-reset();
-
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  font-family: inherit;
-  padding-top: 26px;
-  padding-bottom: 23px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 auto;
-
-  &--loose {
-    width: 220px;
-  }
-
-  &--growth {
-    padding-top: 32px;
-    padding-bottom: 30px;
-  }
-}
-
 .target-item__text {
   @include paragraph-reset();
 
@@ -71,7 +79,7 @@
   font-family: "Arial", sans-serif;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .target-item__link {
@@ -88,7 +96,23 @@
     width: 24px;
     height: 11px;
     vertical-align: baseline;
-    margin-left: 10px;
+    margin-left: 12px;
+  }
+}
+
+.target-item__link {
+  &:hover {
+    &:after {
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+    &:after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -97,6 +121,17 @@
     font-size: 36px;
     padding-top: 38px;
     padding-bottom: 38px;
+    display: block;
+    padding-left: 0;
+    padding-top: 76px;
+
+    &--loose {
+      padding-bottom: 26px;
+    }
+
+    &--growth {
+      padding-bottom: 24px;
+    }
   }
 
   .target-item__text {
@@ -104,37 +139,63 @@
     font-size: 16px;
     line-height: 24px;
     width: auto;
+    margin-bottom: 30px;
   }
 
   .target-item__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      vertical-align: top;
+      margin-left: 22px;
+      margin-top: 4px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .target-item__heading {
+    position: static;
+  }
+
   .target-item__icon {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     margin-right: 0;
+    text-align: center;
 
     &--loose {
-      right: 92px;
+      top: 50%;
+      left: 54%;
+
+      &::before {
+        top: 53%;
+        left: 57%;
+        width: 200px;
+        height: 200px;
+      }
     }
 
     &--growth {
-      right: 27px;
-    }
+      right: 4%;
+      left: auto;
+      top: 60%;
 
-    &::before {
-      width: 200px;
-      height: 200px;
+      &::before {
+        top: 46%;
+        left: 58%;
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 
   .target-item__image {
+    display: inline-block;
+
     &--loose {
       width: 140px;
       height: 194px;

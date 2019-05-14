@@ -3,6 +3,15 @@
 
   display: flex;
   justify-content: space-between;
-  width: 125px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    align-items: center;
+  }
+
+  .socials__item:last-child {
+    padding-right: 0;
+  }
 }
