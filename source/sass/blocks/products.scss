@@ -3,8 +3,7 @@
 }
 
 .products__item {
-  margin-bottom: 24px;
-  padding-top: 15px;
+  padding-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,7 +13,7 @@
     justify-content: space-between;
   }
 
-  .product__item--additional {
-    background-color: #ffffff;
+  .products__item {
+    position: relative;
   }
 }

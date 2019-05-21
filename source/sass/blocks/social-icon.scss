@@ -1,0 +1,9 @@
+.social-icon__image {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

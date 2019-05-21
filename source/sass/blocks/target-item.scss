@@ -2,11 +2,36 @@
   background-color: #f2f2f2;
 }
 
+.target-item__heading {
+  @include heading-reset();
+
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+
+  &--loose {
+    padding: 30px 0;
+    padding-left: 10px;
+  }
+
+  &--growth {
+    padding: 30px 0;
+    padding-left: 38px;
+  }
+}
+
 .target-item__icon {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 12px;
-  position: relative;
+  position: absolute;
   z-index: 2;
   font-size: 0;
 
@@ -19,8 +44,16 @@
     background-color: #68b738;
     z-index: -1;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 60%;
+    transform: translate(-60%, -50%);
+  }
+
+  &--loose {
+    left: 10px;
+  }
+
+  &--growth {
+    left: -8px;
   }
 }
 
@@ -38,29 +71,15 @@
   }
 }
 
-.target-item__heading {
-  @include heading-reset();
-
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  font-family: inherit;
-  padding-top: 31px;
-  padding-bottom: 28px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .target-item__text {
   @include paragraph-reset();
 
   text-align: left;
   color: #444444;
   font-family: "Arial", sans-serif;
-  width: 92%;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 18px;
 }
 
 .target-item__link {
@@ -69,13 +88,48 @@
   line-height: 16px;
   text-decoration: none;
   color: inherit;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    display: inline-block;
+    width: 24px;
+    height: 11px;
+    vertical-align: baseline;
+    margin-left: 12px;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .target-item__heading {
     font-size: 36px;
-    padding-top: 38px;
     padding-bottom: 38px;
+    display: block;
+    padding-left: 0;
+    padding-top: 76px;
+
+    &--loose {
+      padding-bottom: 26px;
+    }
+
+    &--growth {
+      padding-bottom: 24px;
+    }
   }
 
   .target-item__text {
@@ -83,37 +137,63 @@
     font-size: 16px;
     line-height: 24px;
     width: auto;
+    margin-bottom: 30px;
   }
 
   .target-item__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      vertical-align: top;
+      margin-left: 22px;
+      margin-top: 4px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .target-item__heading {
+    position: static;
+  }
+
   .target-item__icon {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     margin-right: 0;
+    text-align: center;
 
     &--loose {
-      right: 92px;
+      top: 50%;
+      left: 54%;
+
+      &::before {
+        top: 53%;
+        left: 57%;
+        width: 200px;
+        height: 200px;
+      }
     }
 
     &--growth {
-      right: 27px;
-    }
+      right: 4%;
+      left: auto;
+      top: 54%;
 
-    &::before {
-      width: 200px;
-      height: 200px;
+      &::before {
+        top: 46%;
+        left: 58%;
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 
   .target-item__image {
+    display: inline-block;
+
     &--loose {
       width: 140px;
       height: 194px;
@@ -129,23 +209,32 @@
 @media (min-width: $desktop-width) {
   .target-item__heading {
     &--growth {
-      padding-top: 68px;
-      padding-bottom: 63px;
+      padding-top: 71px;
+      padding-bottom: 60px;
     }
 
     &--loose {
-      padding-top: 40px;
-      padding-bottom: 50px;
+      padding-top: 50px;
+      padding-bottom: 40px;
     }
   }
 
   .target-item__icon {
     position: static;
     transform: translateY(0);
-    margin-right: 80px;
+
+    &--loose {
+      margin-right: 70px;
+
+      &::before {
+        top: 60%;
+        left: 71%;
+      }
+    }
 
     &--growth {
-      margin-right: 47px;
+      margin-right: 37px;
+      margin-left: -20px;
     }
 
     &::before {
@@ -160,6 +249,7 @@
     &--loose {
       width: 70px;
       height: 97px;
+      margin-left: 12px;
     }
 
     &--growth {
@@ -170,5 +260,6 @@
 
   .target-item__text {
     width: 90%;
+    margin-bottom: 5px;
   }
 }

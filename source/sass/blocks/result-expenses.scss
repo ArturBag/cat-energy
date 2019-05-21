@@ -3,3 +3,22 @@
   line-height: 20px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .result-expenses {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.5px;
+    width: 174px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result-expenses {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 56.5%;
+  }
+}

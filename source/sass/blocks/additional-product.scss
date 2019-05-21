@@ -1,3 +1,16 @@
+.additional-product {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.additional-product__heading {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.additional-product__heading-link {
+  color: inherit;
+}
+
 .additional-product__table {
   width: 100%;
   border-collapse: collapse;
@@ -5,22 +18,73 @@
 }
 
 .additional-product__item-cell {
+  font-size: 14px;
   line-height: 14px;
   color: $gray-font-color;
   padding-bottom: 15px;
 }
 
+.additional-product__button {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .additional-product {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
   .additional-product__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 38px;
+    padding: 0 35px;
+  }
+
+  .additional-product__heading-link {
+    color: inherit;
+  }
+
+  .additional-product__heading {
+    width: auto;
+    padding-left: 3px;
+  }
+
+  .additional-product__table {
+    width: auto;
+
+    &--sugar {
+      width: 36%;
+    }
+
+    &--water {
+      width: 25.5%;
+    }
+
+    &--milk {
+      width: 23%;
+    }
+
+    &--vitamins {
+      width: 34.5%;
+    }
+  }
+
+  .additional-product__item-cell {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-product__button {
-    display: block;
     width: 100%;
   }
 }
@@ -31,13 +95,22 @@
     width: 895px;
   }
 
-  .catalog-additional__wrapper {
-    display: flex;
-    justify-content: space-between;
+  .additional-product__heading {
+    width: 285px;
   }
 
   .additional-product__table {
-    width: 285px;
+    width: 289px;
+
+    &--water {
+      .additional-product__item-cell:last-child {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .additional-product__item-row {
+    border-bottom: none;
   }
 
   .additional-product__button {

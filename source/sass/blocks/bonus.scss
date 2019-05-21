@@ -1,5 +1,15 @@
 .bonus {
   text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background-image: url("../../img/icon-gift.svg");
+    width: 55.5px;
+    height: 60px;
+    margin-bottom: 62px;
+  }
 }
 
 .bonus__text {
@@ -7,4 +17,31 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .bonus {
+    &::before {
+      margin: 0;
+      margin-left: 91px;
+      margin-top: 1px;
+    }
+  }
+
+  .bonus__text {
+    padding-bottom: 0;
+    margin-right: 126px;
+    margin-top: 8px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus__text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

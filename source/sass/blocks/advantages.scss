@@ -1,8 +1,20 @@
 .advantages__heading {
-  margin-top: 12px;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .advantages__list {
   @include list-style-reset();
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__heading {
+    padding-top: 16px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__heading {
+    padding-top: 45px;
+  }
 }

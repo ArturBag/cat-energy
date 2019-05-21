@@ -1,3 +1,24 @@
 .additional-list__item {
-  margin-bottom: 18px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-list {
+    border: 1px solid #cdcdcd;
+  }
+
+  .additional-list__item {
+    padding-bottom: 7px;
+    padding-top: 12px;
+
+    &:last-child {
+      padding-bottom: 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-list__item {
+    padding-bottom: 1px;
+  }
 }

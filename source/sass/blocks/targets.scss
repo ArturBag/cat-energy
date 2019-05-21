@@ -1,12 +1,9 @@
 .targets__target {
   padding-bottom: 20px;
   padding-left: 20px;
-  margin-bottom: 20px;
+  padding-right: 20px;
+  margin-bottom: 19px;
   position: relative;
-}
-
-.targets__target--loose {
-  margin-top: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,6 +11,14 @@
     padding-bottom: 20px;
     padding-left: 54px;
     margin-bottom: 30px;
+
+    &--loose {
+      padding-bottom: 60px;
+    }
+
+    &--growth {
+      padding-bottom: 60px;
+    }
   }
 }
 
@@ -31,12 +36,12 @@
   .targets__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1220px;
+    width: 100%;
   }
 
   .targets__target {
     width: 570px;
-
+    padding-bottom: 60px;
     padding-right: 0;
 
     &--growth {

@@ -7,18 +7,19 @@
   text-transform: uppercase;
 }
 
-.additional-product__heading {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 @media (min-width: $tablet-width) {
   .product-info-heading {
     width: 45%;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .product__info-heading {
+    width: 80%;
+  }
+
   .product-info-heading {
     width: 245px;
   }

@@ -1,10 +1,30 @@
+.catalog-additional__wrapper {
+  margin-bottom: 35px;
+}
+
 .catalog-additional__heading {
   @include heading-reset();
 
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  padding: 32px 0;
+  padding: 29px 0 34px 0;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+    top: 50%;
+    right: -20px;
+  }
+}
+
+.catalog-additional__list {
+  margin-bottom: 40px;
 }
 
 .catalog-additional__bonus {
@@ -13,36 +33,86 @@
   background-color: #71b548;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-top: 187px;
+  padding-top: 64px;
   padding-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-additional__wrapper {
+    margin-bottom: 75px;
+  }
+
   .catalog-additional__heading {
-    padding: 0 38px;
+    padding: 0 35px;
     font-size: 36px;
     line-height: 36px;
+    border-bottom: none;
+    margin-bottom: 80px;
+
+    &::after {
+      width: 327px;
+      top: 60%;
+      right: -30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+      top: 60%;
+      left: -30px;
+    }
   }
 
   .catalog-additional__list {
     flex-direction: column;
+    margin-bottom: 54px;
   }
 
   .catalog-additional__bonus {
     background-color: #71b548;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .catalog-additional__heading {
     padding: 0;
+    padding-top: 6px;
+    width: 100%;
   }
 
   .catalog-additional__bonus {
     width: 245px;
-    padding-top: 120px;
+    padding-top: 64px;
     padding-bottom: 40px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    height: 289px;
+    flex-direction: column;
+  }
+
+  .catalog-additional__list {
+    border-left: none;
+    border-right: none;
+    margin-bottom: 9px;
+  }
+
+  .catalog-additional-content__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
 }
