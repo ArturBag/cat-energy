@@ -120,8 +120,13 @@
     justify-content: space-between;
   }
 
+  .header__index {
+    margin-bottom: 27px;
+  }
+
   .header__index-wrapper {
     position: relative;
+    padding-top: 31px;
 
     &::before {
       content: "";
@@ -131,7 +136,6 @@
       background-color: #63a73a;
       background-image: url("../../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      // background-position: 50% 0%;
       position: absolute;
       top: 0;
       right: 0;
@@ -142,16 +146,26 @@
   .header__сatalog-wrapper {
     @include desktop-content-size();
 
+    padding-top: 31px;
     display: flex;
     justify-content: space-between;
   }
 
-  .header__logo {
-    width: 570px;
+  .header-logo {
+    padding-top: 0;
+  }
+
+  .header-logo__image {
+    width: 202px;
+    height: 59px;
   }
 
   .header__nav-menu {
     width: 570px;
     text-align: center;
+  }
+
+  .header__form-wrapper {
+    padding-top: 31px;
   }
 }

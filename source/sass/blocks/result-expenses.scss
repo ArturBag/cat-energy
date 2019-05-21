@@ -13,3 +13,12 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .result-expenses {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 56.5%;
+  }
+}

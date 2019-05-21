@@ -37,13 +37,15 @@
     }
   }
 
-  &:focus + label {
+  &:active + label {
+    opacity: 0.3;
+
     &::before {
       color: rgba(68, 68, 68, 03);
       border-color: rgba(68, 68, 68, 0.3);
     }
 
-    &:after {
+    &::after {
       opacity: 0.3;
       border-color: rgba(68, 68, 68, 0.3);
     }
@@ -82,5 +84,11 @@
     height: 18px;
     top: 11px;
     left: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-target {
+    width: 45%;
   }
 }

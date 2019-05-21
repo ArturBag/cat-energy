@@ -26,3 +26,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .address {
+    width: 33%;
+  }
+}

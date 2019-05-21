@@ -29,5 +29,21 @@
 
   .form-section__form {
     margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form-section__necessary-mark {
+    font-size: 16px;
+    width: 45%;
+    text-align: left;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section__necessary-mark {
+    width: 46.6%;
   }
 }

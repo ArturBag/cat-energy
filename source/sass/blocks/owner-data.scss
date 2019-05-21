@@ -48,3 +48,26 @@
     margin-bottom: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .owner-data__heading {
+    padding-top: 45px;
+    margin-bottom: 76px;
+  }
+
+  .owner-data__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .owner-data__caption {
+    width: 46.8%;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

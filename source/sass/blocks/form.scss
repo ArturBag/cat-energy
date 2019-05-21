@@ -12,11 +12,11 @@
     border-color: rgba(230, 230, 230, 1);
   }
 
-  &:active {
+  &:focus {
     border: 2px solid rgba(68, 68, 68, 1);
   }
 
-  &:active + svg {
+  &:focus + svg {
     fill: #68b738;
   }
 }
@@ -38,12 +38,6 @@
   margin-bottom: 4px;
 }
 
-.comment__caption::after {
-  width: 158px;
-  top: 60%;
-  right: -20px;
-}
-
 .form input[disabled] + label {
   opacity: 0.3;
   color: #222222;
@@ -52,10 +46,12 @@
 @media (min-width: $tablet-width) {
   .form__cat-data {
     margin-bottom: 50px;
+    width: 100%;
   }
 
   .form__programm-target {
     border-bottom: none;
+    width: 100%;
   }
 
   .form__owner-data {
@@ -74,11 +70,33 @@
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .form-section__necessary-mark {
-    font-size: 16px;
-    width: 45%;
-    text-align: left;
-    padding-top: 17px;
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form__cat-data {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .form__programm-target {
+    width: 50%;
+  }
+
+  .form__owner-data {
+    margin-bottom: 68px;
+  }
+
+  .form__additional {
+    margin-bottom: 62px;
+  }
+
+  .form__button {
+    width: 46.6%;
   }
 }

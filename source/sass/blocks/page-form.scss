@@ -39,9 +39,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-form__wrapper {
-    width: 1220px;
-    margin: 0 auto;
+  .page-form-wrapper {
+    @include desktop-content-size();
+  }
+
+  .page-form__heading {
     padding: 0 40px;
+    padding-top: 71px;
+    padding-bottom: 57px;
+    margin: 0;
+  }
+
+  .page-form__form {
+    margin-bottom: 82px;
   }
 }

@@ -37,3 +37,11 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .bonus__text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

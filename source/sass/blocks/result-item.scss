@@ -47,6 +47,7 @@
     font-weight: 400;
     line-height: 14px;
     width: 97px;
+    background-color: #ffffff;
 
     &:last-child {
       width: 128px;
@@ -55,5 +56,11 @@
 
   .result-item__subtitle br {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result-item__subtitle {
+    background-color: #f2f2f2;
   }
 }

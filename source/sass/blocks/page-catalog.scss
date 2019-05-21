@@ -14,19 +14,12 @@
   background-color: #f2f2f2;
 }
 
-.page-catalog__wrapper {
-  margin-bottom: 35px;
-}
-
 @media (min-width: $tablet-width) {
-  .page-catalog__wrapper {
-    margin-bottom: 75px;
-  }
-
   .page-catalog__heading-wrapper {
     border-bottom: none;
     margin-bottom: 165px;
   }
+
   .page-catalog__heading {
     @include tablet-content-size();
 
@@ -42,7 +35,7 @@
   .page-catalog__heading {
     @include desktop-content-size();
 
-    padding-top: 60px;
-    padding-bottom: 155px;
+    padding-top: 72px;
+    padding-bottom: 0;
   }
 }

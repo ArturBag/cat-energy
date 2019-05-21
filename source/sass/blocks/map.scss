@@ -9,3 +9,10 @@
     height: 394px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 100%;
+    height: 399px;
+  }
+}

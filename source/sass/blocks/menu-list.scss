@@ -48,10 +48,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .menu-list__item {
+    &:first-child {
+      padding-left: 91px;
+    }
+  }
+
   .menu-list__link {
     font-size: 20px;
     line-height: 24.86px;
     color: $white-font-color;
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .menu-list__catalog .menu-list__link--active {
+    border-bottom: 2px solid #68b738;
+  }
+
+  .menu-list__form .menu-list__link--active {
+    border-bottom: 2px solid #68b738;
   }
 
   .menu-list__catalog a,

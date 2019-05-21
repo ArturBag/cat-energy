@@ -16,6 +16,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product__info-heading {
+    width: 80%;
+  }
+
   .product-info-heading {
     width: 245px;
   }
