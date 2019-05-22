@@ -39,12 +39,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-form__heading-wrapper {
+    @include desktop-content-size();
+  }
+
   .page-form-wrapper {
     @include desktop-content-size();
   }
 
   .page-form__heading {
-    padding: 0 40px;
+    padding: 0;
     padding-top: 71px;
     padding-bottom: 57px;
     margin: 0;
