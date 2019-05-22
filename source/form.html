@@ -43,46 +43,50 @@
       </div>
     </header>
     <main class="page-form">
-      <h2 class="page-form-wrapper section-heading page-form__heading">Подбор программы</h2>
+      <div class="page-form__heading-wrapper">
+        <h2 class="page-form-wrapper section-heading page-form__heading">Подбор программы</h2>
+      </div>
       <section class="page-form__form form-section">
         <div class="page-form-wrapper">
           <h3 class="visually-hidden">Анкета</h3>
           <b class="form-section__title">Заполните анкету и мы подберем<br>программу питания для вашего кота</b>
         </div>
         <form class="form-section__form form" action="https://echo.htmlacademy.ru." method="get">
-          <fieldset class="form__cat-data cat-data">
-            <legend class="visually-hidden">Персональные данные Вашего кота</legend>
-            <div class="page-form-wrapper cat-data__wrapper">
-              <label class="line-item cat-data__caption"><span class="line-item__title--name">Имя:*</span>
-                <input type="text" class="form-field cat-data__field  cat-data__field--name input-error" name="cat-name" value="Барсик">
-              </label>
-              <label class="line-item cat-data__caption"><span class="line-item__title--weight">Вес (кг):*</span>
-                <input type="text" class="form-field cat-data__field cat-data__field--weight input-error" name="cat-weight" value="7">
-              </label>
-              <label class="line-item cat-data__caption"><span class="line-item__title--age">Возраст (лет):</span>
-                <input type="text" class="form-field cat-data__field cat-data__field--age" name="cat-age" value="7">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="programm-target form__programm-target">
-            <legend class="visually-hidden">Цель программы</legend>
-            <div class="page-form-wrapper">
-              <div class="programm-target__wrapper">
-                <div class="programm-target__field-wrapper">
-                  <input type="radio" id="programm-target__weight-decrease" class="visually-hidden" name="target-radio-btn" value="weight-decrease" checked>
-                  <label for="programm-target__weight-decrease" class="line-item programm-target__caption"><span>Похудение</span></label>
-                </div>
-                <div class="programm-target__field-wrapper">
-                  <input type="radio" id="programm-target__weight-increase" class="visually-hidden" name="target-radio-btn" value="weight-increase">
-                  <label for="programm-target__weight-increase" class="line-item programm-target__caption"><span>Набор массы</span></label>
-                </div>
-                <div class="programm-target__field-wrapper">
-                  <input type="radio" id="programm-target__advice" class="visually-hidden" name="target-radio-btn" value="advice">
-                  <label for="programm-target__advice" class="line-item programm-target__caption"><span>Не знаю (Нужен ваш совет)</span></label>
+          <div class="form__blocks-wrapper">
+            <fieldset class="form__cat-data cat-data">
+              <legend class="visually-hidden">Персональные данные Вашего кота</legend>
+              <div class="page-form-wrapper cat-data__wrapper">
+                <label class="line-item cat-data__caption"><span class="line-item__title--name">Имя:*</span>
+                  <input type="text" class="form-field cat-data__field  cat-data__field--name input-error" name="cat-name" value="Барсик">
+                </label>
+                <label class="line-item cat-data__caption"><span class="line-item__title--weight">Вес (кг):*</span>
+                  <input type="text" class="form-field cat-data__field cat-data__field--weight input-error" name="cat-weight" value="7">
+                </label>
+                <label class="line-item cat-data__caption"><span class="line-item__title--age">Возраст (лет):</span>
+                  <input type="text" class="form-field cat-data__field cat-data__field--age" name="cat-age" value="7">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="programm-target form__programm-target">
+              <legend class="visually-hidden">Цель программы</legend>
+              <div class="page-form-wrapper">
+                <div class="programm-target__wrapper">
+                  <div class="programm-target__field-wrapper">
+                    <input type="radio" id="programm-target__weight-decrease" class="visually-hidden" name="target-radio-btn" value="weight-decrease" checked>
+                    <label for="programm-target__weight-decrease" class="line-item programm-target__caption"><span>Похудение</span></label>
+                  </div>
+                  <div class="programm-target__field-wrapper">
+                    <input type="radio" id="programm-target__weight-increase" class="visually-hidden" name="target-radio-btn" value="weight-increase">
+                    <label for="programm-target__weight-increase" class="line-item programm-target__caption"><span>Набор массы</span></label>
+                  </div>
+                  <div class="programm-target__field-wrapper">
+                    <input type="radio" id="programm-target__advice" class="visually-hidden" name="target-radio-btn" value="advice">
+                    <label for="programm-target__advice" class="line-item programm-target__caption"><span>Не знаю (Нужен ваш совет)</span></label>
+                  </div>
                 </div>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="page-form-wrapper">
             <fieldset class="form__owner-data owner-data">
               <legend class="group-heading owner-data__heading">Контактные данные (владельца кота)</legend>
