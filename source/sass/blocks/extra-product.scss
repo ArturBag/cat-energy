@@ -117,6 +117,22 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .extra-product__heading {
+    padding-top: 62px;
+    margin-bottom: 57px;
+
+    &::before {
+      top: 87%;
+      left: -40px;
+    }
+
+    &::after {
+      width: 85%;
+      top: 87%;
+    }
+  }
+
   .extra-product__wrapper-field {
     width: 20%;
     margin-bottom: 0;

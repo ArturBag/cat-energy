@@ -53,6 +53,16 @@
   .owner-data__heading {
     padding-top: 45px;
     margin-bottom: 76px;
+
+    &::after {
+      width: 60.3%;
+      top: 84%;
+    }
+
+    &::before {
+      top: 84%;
+      left: -40px;
+    }
   }
 
   .owner-data__wrapper {

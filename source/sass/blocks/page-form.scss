@@ -22,7 +22,7 @@
 @media (min-width: $tablet-width) {
   .page-form-wrapper {
     @include tablet-content-size();
-    // padding: 0 70px;
+
     padding-left: 70px;
     padding-right: 67px;
   }
