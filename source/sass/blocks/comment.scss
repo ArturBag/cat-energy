@@ -56,3 +56,17 @@
     padding-left: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment__caption {
+    &::after {
+      width: 87.6%;
+      top: 58%;
+    }
+
+    &::before {
+      top: 58%;
+      left: -40px;
+    }
+  }
+}

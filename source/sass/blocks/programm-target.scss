@@ -66,6 +66,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programm-target__block-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
   .programm-target__wrapper {
     border: 1px solid #e6e6e6;
     padding: 24px 0 5px 28px;

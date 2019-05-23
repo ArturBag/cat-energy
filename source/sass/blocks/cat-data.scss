@@ -18,6 +18,11 @@
     border-bottom: none;
   }
 
+  .cat-data__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
   .cat-data__field {
     &--name {
       padding-left: 19px;
@@ -40,6 +45,8 @@
 
 @media (min-width: $desktop-width) {
   .cat-data__wrapper {
-    width: 45%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 }
