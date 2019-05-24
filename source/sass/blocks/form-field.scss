@@ -10,6 +10,10 @@
   padding: 11.3px 0 13px 14px;
 }
 
+.form-field::placeholder {
+  color: #444444;
+}
+
 @media (min-width: $tablet-width) {
   .form-field {
     font-size: 20px;
