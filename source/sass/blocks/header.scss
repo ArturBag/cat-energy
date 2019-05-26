@@ -32,29 +32,28 @@
 
 .header-menu__button {
   @include button-style-reset();
+
+  &--open {
+    background-image: url("../../img/icon-mobile-menu.svg");
+    width: 24px;
+    height: 18px;
+  }
+
+  &--close {
+    background-image: url("../../img/icon-close.svg");
+    width: 18px;
+    height: 18px;
+    display: none;
+  }
 }
 
 .header__nav-menu {
   @include list-style-reset();
-}
 
-.header .header-menu__button {
-  background-image: url("../../img/icon-close.svg");
-  width: 18px;
-  height: 18px;
-}
-
-.header .header__nav-menu {
   display: block;
 }
 
-.header__menu-hidden .header-menu__button {
-  background-image: url("../../img/icon-mobile-menu.svg");
-  width: 24px;
-  height: 18px;
-}
-
-.header__menu-hidden .header__nav-menu {
+.header__nav-menu--hidden {
   display: none;
 }
 
@@ -64,7 +63,7 @@
     margin: 0;
   }
 
-  .header__menu-hidden .header__nav-menu {
+  .header__nav-menu--hidden {
     display: block;
   }
 

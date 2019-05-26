@@ -6,12 +6,31 @@
   margin: 0 auto;
 }
 
+.socials__item {
+  &--instagram {
+    margin-top: 1px;
+    margin-right: 5px;
+  }
+
+  &--facebook {
+    margin-right: 8px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .socials {
     align-items: center;
   }
 
-  .socials__item:last-child {
-    padding-right: 0;
+  .socials__item {
+    &--instagram {
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: 4px;
+    }
+
+    &--facebook {
+      margin-right: 0;
+    }
   }
 }
