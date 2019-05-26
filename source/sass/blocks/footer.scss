@@ -42,6 +42,10 @@
     justify-content: space-between;
   }
 
+  .footer__wrapper {
+    padding-bottom: 10px;
+  }
+
   .footer__logo {
     border-bottom: 0;
     padding-top: 66px;
@@ -55,6 +59,7 @@
   .footer__socials-wrapper {
     border-bottom: none;
     padding-top: 62px;
+    margin-bottom: 0;
   }
 
   .footer__socials {
@@ -81,7 +86,7 @@
 
   .footer__copyright {
     width: 162px;
-    padding-top: 56px;
+    padding-top: 52px;
   }
 }
 
