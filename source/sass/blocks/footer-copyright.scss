@@ -15,6 +15,18 @@
   align-items: center;
 }
 
+.footer-copyright__link {
+  &:hover {
+    .footer-copyright__image {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .footer-copyright__source {
   font-size: 16px;
   line-height: 16px;
@@ -25,8 +37,5 @@
 
 .footer-copyright__image {
   margin-right: -7px;
-}
-
-.footer-copyright__link:hover .footer-copyright__image {
-  fill: #68b738;
+  fill: #666666;
 }

@@ -27,7 +27,7 @@
             <span class="visually-hidden">Закрыть меню</span>
           </button>
         </div>
-        <nav class="header__nav-menu nav-menu header__nav-menu--hidden">
+        <nav class="header__nav-menu nav-menu">
           <ul class="nav-menu__list menu-list menu-list__catalog">
             <li class="menu-list__item">
               <a href="index.html" class="menu-list__link menu-list__link--catalog">Главная</a>
@@ -416,6 +416,7 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
               <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" class="location__map-elem map" width="320" height="362" alt="Карта">
             </picture>
+            <iframe class="location__map-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.495198090856!2d30.321737667804115!3d59.937422606046425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1558896080283!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </section>
@@ -429,7 +430,7 @@
           </div>
           <div class="footer__socials-wrapper">
             <ul class="footer__socials socials">
-              <li class="socials__item social-icon">
+              <li class="socials__item social-icon socials__item--vkontakte">
                 <a href="#" class="social-icon__link">
                   <span class="visually-hidden">Мы Вконтакте</span>
                   <svg class="social-icon__image social-icon__image--vkontakte" width="22" height="12">
@@ -437,7 +438,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="socials__item social-icon">
+              <li class="socials__item social-icon socials__item--instagram">
                 <a href="#" class="social-icon__link">
                   <span class="visually-hidden">Мы в Инстаграме</span>
                   <svg class="social-icon__image social-icon__image--instagram" width="16" height="16">
@@ -445,7 +446,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="socials__item social-icon">
+              <li class="socials__item social-icon socials__item--facebook">
                 <a href="#" class="social-icon__link">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                   <svg class="social-icon__image social-icon__image--facebook" width="10" height="19">
@@ -456,15 +457,16 @@
             </ul>
           </div>
           <p class="footer-copyright footer__copyright">
-          <span class="footer-copyright__source">HTML Academy</span>
-          <a href="https://up.htmlacademy.ru/adaptive/16" class="footer-copyright__link" target="_blank">
-            <svg class="footer-copyright__image" width="60" height="60">
-              <use xlink:href="#htmlacademy"></use>
-            </svg>
+            <a href="https://up.htmlacademy.ru/adaptive/16" class="footer-copyright__link" target="_blank">
+              <span class="footer-copyright__source">HTML Academy</span>
+              <svg class="footer-copyright__image" width="60" height="60">
+                <use xlink:href="#htmlacademy"></use>
+              </svg>
             </a>
           </p>
         </div>
       </footer>
       <script src="js/picturefill.min.js"></script>
+      <script src="js/scripts.js"></script>
   </body>
 </html>

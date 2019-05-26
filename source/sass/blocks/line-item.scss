@@ -21,7 +21,7 @@
   }
 
   &--email {
-    width: 80px;
+    width: 83px;
   }
 
   &--phone {
@@ -34,6 +34,7 @@
     padding-top: 11.8px;
     padding-right: 47px;
     padding-left: 16px;
+    padding-bottom: 11px;
   }
 }
 
@@ -103,6 +104,39 @@
     &--phone {
       top: 36%;
       right: 16px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .line-item__title {
+    &--name {
+      width: 72px;
+    }
+
+    &--weight {
+      width: 115px;
+    }
+
+    &--age {
+      width: 177px;
+    }
+
+    &--email {
+      width: 98px;
+    }
+
+    &--phone {
+      width: 119px;
+    }
+  }
+
+  .line-item__icon {
+    &--mail {
+      right: 21px;
+    }
+
+    &--phone {
+      right: 19px;
     }
   }
 }

@@ -44,4 +44,10 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  .bonus {
+    &::before {
+      margin-left: 95px;
+    }
+  }
 }

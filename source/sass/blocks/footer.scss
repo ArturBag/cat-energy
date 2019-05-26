@@ -48,7 +48,7 @@
 
   .footer__logo {
     border-bottom: 0;
-    padding-top: 66px;
+    padding-top: 63px;
   }
 
   .footer-logo__image {
@@ -58,7 +58,7 @@
 
   .footer__socials-wrapper {
     border-bottom: none;
-    padding-top: 62px;
+    padding-top: 59px;
     margin-bottom: 0;
   }
 
@@ -86,7 +86,7 @@
 
   .footer__copyright {
     width: 162px;
-    padding-top: 52px;
+    padding-top: 51px;
   }
 }
 
@@ -95,5 +95,13 @@
     @include desktop-content-size();
 
     padding-bottom: 25px;
+  }
+
+  .footer__socials-wrapper {
+    padding-top: 61px;
+  }
+
+  .footer__copyright {
+    padding-top: 55px;
   }
 }

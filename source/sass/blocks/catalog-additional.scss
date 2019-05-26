@@ -102,6 +102,11 @@
     padding: 0;
     padding-top: 6px;
     width: 100%;
+
+    &::after {
+      width: 72%;
+      top: 66%;
+    }
   }
 
   .catalog-additional__bonus {

@@ -3,6 +3,16 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 21px;
+  margin-bottom: 19px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form input {
@@ -58,17 +68,6 @@
 .form input[disabled] + label {
   opacity: 0.3;
   color: #222222;
-}
-
-.form__button {
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    background-color: #5eaa2f;
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {
