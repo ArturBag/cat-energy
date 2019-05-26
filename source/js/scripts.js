@@ -4,13 +4,13 @@ var mobileMenu = document.querySelector(".header__nav-menu"),
     btnMenuOpen = document.querySelector(".header-menu__button--open");
 
 mobileMenu.classList.add("header__nav-menu--hidden");
-btnMenu.classList.remove("header-menu__button--close");
-btnMenu.classList.add("header-menu__button--open");
+btnMenuOpen.classList.add("header-menu__button--show");
 
-btnMenu.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  btnMenu
-});
+
+// btnMenu.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   btnMenu
+// });
 
 // btnMenuOpen.addEventListener("click", function (evt) {
 //   evt.preventDefault();

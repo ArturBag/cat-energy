@@ -37,22 +37,19 @@
     background-image: url("../../img/icon-mobile-menu.svg");
     width: 24px;
     height: 18px;
-<<<<<<< HEAD
     display: none;
-=======
->>>>>>> master
   }
 
   &--close {
     background-image: url("../../img/icon-close.svg");
     width: 18px;
     height: 18px;
-<<<<<<< HEAD
-    display: block;
-=======
     display: none;
->>>>>>> master
   }
+}
+
+.header-menu__button--show {
+  display: block;
 }
 
 .header__nav-menu {
@@ -61,13 +58,6 @@
   display: block;
 }
 
-<<<<<<< HEAD
-.header__nav-menu--show {
-  display: block;
-}
-
-=======
->>>>>>> master
 .header__nav-menu--hidden {
   display: none;
 }

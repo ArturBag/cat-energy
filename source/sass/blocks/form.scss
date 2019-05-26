@@ -7,17 +7,35 @@
 
 .form input {
   border: 1px solid rgba(230, 230, 230, 0.5);
+  font-family: inherit;
 
   &:hover {
     border-color: rgba(230, 230, 230, 1);
   }
 
   &:focus {
-    border: 2px solid rgba(68, 68, 68, 1);
+    outline: 2px solid rgba(68, 68, 68, 1);
   }
 
   &:focus + svg {
     fill: #68b738;
+  }
+}
+
+.form__comment textarea {
+  font-family: inherit;
+
+  &:focus {
+    outline: 1px solid blue;
+  }
+}
+
+.form__programm-target input + label,
+.form__additional input + label {
+  font-family: inherit;
+
+  &:focus {
+    outline: 1px solid blue;
   }
 }
 
@@ -40,6 +58,17 @@
 .form input[disabled] + label {
   opacity: 0.3;
   color: #222222;
+}
+
+.form__button {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -72,6 +101,7 @@
     min-height: 52px;
     margin: 0;
     width: 45%;
+    cursor: pointer;
   }
 
   .form__elements-wrapper {
