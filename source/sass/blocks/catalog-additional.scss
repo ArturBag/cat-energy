@@ -73,7 +73,8 @@
 
   .catalog-additional__list {
     flex-direction: column;
-    margin-bottom: 54px;
+    display: block;
+    margin-bottom: 70px;
   }
 
   .catalog-additional__bonus {
@@ -126,7 +127,7 @@
   .catalog-additional__list {
     border-left: none;
     border-right: none;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
 
   .catalog-additional-content__wrapper {

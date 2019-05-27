@@ -64,7 +64,7 @@
 
 .form input {
   &:invalid {
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
 
     & + svg {
       fill: #ff8282;
@@ -146,7 +146,7 @@
   }
 
   .form__additional {
-    margin-bottom: 62px;
+    margin-bottom: 0;
   }
 
   .form__button {

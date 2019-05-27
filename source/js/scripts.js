@@ -27,4 +27,3 @@ btnMenuClose.addEventListener("click", function (evt) {
   btnMenuOpen.classList.add("header-menu__button--show");
   btnMenuClose.classList.remove("header-menu__button--show");
 });
-

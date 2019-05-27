@@ -49,10 +49,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .menu-list__item {
-    &:first-child {
-      padding-left: 91px;
-    }
+  .menu-list {
+    padding-left: 91px;
   }
 
   .menu-list__link {

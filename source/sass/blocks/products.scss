@@ -17,3 +17,9 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .products {
+    justify-content: normal;
+  }
+}
