@@ -49,14 +49,6 @@
   }
 }
 
-.input-error {
-  border: 2px solid #ff8282;
-
-  & + svg {
-    fill: #ff8282;
-  }
-}
-
 .form__cat-data {
   margin-bottom: 20px;
 }
@@ -68,6 +60,20 @@
 .form input[disabled] + label {
   opacity: 0.3;
   color: #222222;
+}
+
+.form input {
+  &:invalid {
+    border: 2px solid #ff8282;
+
+    & + svg {
+      fill: #ff8282;
+    }
+  }
+
+  &:valid {
+    border: 1px solid rgba(230, 230, 230, 0.5);
+  }
 }
 
 @media (min-width: $tablet-width) {

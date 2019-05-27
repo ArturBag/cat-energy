@@ -2,8 +2,12 @@ var mobileMenu = document.querySelector(".header__nav-menu"),
   btnMenu = document.querySelector(".header-menu__button"),
   btnMenuClose = document.querySelector(".header-menu__button--close"),
   btnMenuOpen = document.querySelector(".header-menu__button--open"),
-  mapPicture = document.querySelector(".map");
-
+  mapPicture = document.querySelector(".map"),
+  form = document.querySelector(".form"),
+  catNameField = document.querySelector(".cat-data__field--name"),
+  catWeightField = document.querySelector(".cat-data__field--weight"),
+  catOwnerEmail = document.querySelector(".line-item__owner-field--email"),
+  catOwnerPhone = document.querySelector(".line-item__owner-field--phone");
 
 mobileMenu.classList.add("header__nav-menu--hidden");
 btnMenuOpen.classList.add("header-menu__button--show");
@@ -24,23 +28,3 @@ btnMenuClose.addEventListener("click", function (evt) {
   btnMenuClose.classList.remove("header-menu__button--show");
 });
 
-
-// btnMenu.addEventListener("click", function (evt) {
-//
-//   btnMenu
-// });
-
-// btnMenuOpen.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   mobileMenu.classList.toggle("header__nav-menu--shown");
-//   if (mobileMenu.classList.contains("header__nav-menu--shown")) {
-//     mobileMenu.classList.remove("header__nav-menu--hidden");
-//     btnMenuClose.style = "display:block";
-//     btnMenuOpen.style = "display:none";
-//   }
-//   else {
-//     btnMenuClose.style = "display:none";
-//     btnMenuOpen.style = "display:block";
-//   }
-
-// }
