@@ -4,6 +4,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-copyright__link {
+  margin-top: 2px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &:hover {
+    .footer-copyright__image {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer-copyright__source {
@@ -11,9 +31,10 @@
   line-height: 16px;
   font-family: "Arial", sans-serif;
   word-spacing: -2px;
+  color: #444444;
 }
 
-.footer-copyright__link {
-  margin-top: 2px;
+.footer-copyright__image {
   margin-right: -7px;
+  fill: #666666;
 }

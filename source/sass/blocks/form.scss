@@ -2,30 +2,32 @@
   width: 100%;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 21px;
-}
-
-.form input {
-  border: 1px solid rgba(230, 230, 230, 0.5);
+  margin-bottom: 19px;
 
   &:hover {
-    border-color: rgba(230, 230, 230, 1);
+    background-color: #5eaa2f;
   }
 
-  &:focus {
-    border: 2px solid rgba(68, 68, 68, 1);
-  }
-
-  &:focus + svg {
-    fill: #68b738;
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
-.input-error {
-  border: 2px solid #ff8282;
+.form__comment textarea {
+  font-family: inherit;
 
-  & + svg {
-    fill: #ff8282;
+  &:focus {
+    outline: 1px solid blue;
+  }
+}
+
+.form__programm-target input + label,
+.form__additional input + label {
+  font-family: inherit;
+
+  &:focus {
+    outline: 1px solid blue;
   }
 }
 
@@ -37,10 +39,40 @@
   margin-bottom: 4px;
 }
 
-.form input[disabled] + label {
-  opacity: 0.3;
-  color: #222222;
+.form input {
+  border: 1px solid rgba(230, 230, 230, 0.5);
+  font-family: inherit;
+
+  &:hover {
+    border-color: rgba(230, 230, 230, 1);
+  }
+
+  &:focus {
+    outline: 2px solid rgba(68, 68, 68, 1);
+  }
+
+  &:focus + svg {
+    fill: #68b738;
+  }
+
+  &[disabled] + label {
+    opacity: 0.3;
+    color: #222222;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+
+    & + svg {
+      fill: #ff8282;
+    }
+  }
+
+  &:valid {
+    border: 1px solid rgba(230, 230, 230, 0.5);
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .form__blocks-wrapper {
@@ -72,6 +104,7 @@
     min-height: 52px;
     margin: 0;
     width: 45%;
+    cursor: pointer;
   }
 
   .form__elements-wrapper {
@@ -111,7 +144,7 @@
   }
 
   .form__additional {
-    margin-bottom: 62px;
+    margin-bottom: 0;
   }
 
   .form__button {

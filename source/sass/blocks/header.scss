@@ -28,6 +28,7 @@
 .header-logo__image {
   width: 191px;
   height: 38px;
+  fill: #111111;
 }
 
 .header-menu__button {
@@ -37,6 +38,7 @@
     background-image: url("../../img/icon-mobile-menu.svg");
     width: 24px;
     height: 18px;
+    display: none;
   }
 
   &--close {
@@ -45,6 +47,10 @@
     height: 18px;
     display: none;
   }
+}
+
+.header-menu__button--show {
+  display: block;
 }
 
 .header__nav-menu {
@@ -108,6 +114,10 @@
   .header {
     width: auto;
     margin: 0;
+  }
+
+  .header__items-wrapper {
+    margin-right: auto;
   }
 
   .header__index-wrapper,

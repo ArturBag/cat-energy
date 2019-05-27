@@ -91,6 +91,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
 
   &--prev {
     width: 40px;
@@ -264,7 +265,7 @@
   .example__heading {
     @include desktop-content-size();
 
-    padding-top: 107px;
+    padding-top: 0;
     margin-bottom: 75px;
   }
 
