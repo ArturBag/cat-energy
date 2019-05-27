@@ -265,7 +265,7 @@
   .example__heading {
     @include desktop-content-size();
 
-    padding-top: 0px;
+    padding-top: 0;
     margin-bottom: 75px;
   }
 
