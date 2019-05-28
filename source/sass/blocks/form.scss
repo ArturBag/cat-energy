@@ -2,7 +2,7 @@
   width: 100%;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 
   &:hover {
     background-color: #5eaa2f;
@@ -60,19 +60,18 @@
     color: #222222;
   }
 
-  &:invalid {
-    outline: 2px solid #ff8282;
-
-    & + svg {
-      fill: #ff8282;
-    }
-  }
-
   &:valid {
     border: 1px solid rgba(230, 230, 230, 0.5);
   }
 }
 
+.form-field--error {
+  outline: 2px solid #ff8282;
+
+  & + svg {
+    fill: #ff8282;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .form__blocks-wrapper {

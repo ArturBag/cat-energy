@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -19,14 +19,11 @@
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
+              <img src="img/logo-mobile.svg" class="header__logo-image" width="191" height="38" alt="Логотип магазина">
             </picture>
           </a>
-          <button class="header-menu__button header-menu__button--open" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <button class="header-menu__button header-menu__button--close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
+          <button class="header__menu-button" type="button">
+            <span class="visually-hidden header__menu-button-title">Открыть меню</span>
           </button>
         </div>
         <nav class="header__nav-menu nav-menu">
@@ -311,7 +308,7 @@
                   <a href="#" class="button catalog-button product__button">Заказать</a>
                 </div>
               </li>
-              <li class="products__item product product__item--additional">
+              <li class="products__item product product--item-additional">
                 <div class="product__item-wrapper product__item-wrapper--more">
                   <span class="product__additional-decoration"></span>
                   <b class="product__additional-title">Показать еще 100500 товаров</b>
@@ -324,8 +321,8 @@
         </section>
         <section class="page-catalog__additional catalog-additional">
           <div class="main-section-wrapper catalog-additional__wrapper">
-            <h3 class="catalog-additional__heading">Дополнительные товары</h3>
-            <div class="catalog-additional-content__wrapper">
+            <h3 class="catalog-additional__heading"><span class="catalog-additional__heading-text">Дополнительные товары</span></h3>
+            <div class="catalog-additional__content-wrapper">
               <ul class="products catalog-additional__list additional-list">
                 <li class="additional-list__item additional-product">
                   <div class="additional-product__wrapper">

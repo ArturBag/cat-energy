@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -19,14 +19,11 @@
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" class="header-logo__image" width="191" height="38" alt="Логотип магазина">
+              <img src="img/logo-mobile.svg" class="header__logo-image" width="191" height="38" alt="Логотип магазина">
             </picture>
           </a>
-          <button class="header-menu__button header-menu__button--open" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <button class="header-menu__button header-menu__button--close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
+          <button class="header__menu-button" type="button">
+            <span class="visually-hidden header__menu-button-title">Открыть меню</span>
           </button>
         </div>
         <nav class="header__nav-menu nav-menu">
@@ -53,18 +50,18 @@
           <h3 class="visually-hidden">Анкета</h3>
           <b class="form-section__title">Заполните анкету и мы подберем<br>программу питания для вашего кота</b>
         </div>
-        <form class="form-section__form form" action="https://echo.htmlacademy.ru." method="get">
+        <form class="form-section__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__blocks-wrapper">
             <fieldset class="form__cat-data cat-data">
               <legend class="visually-hidden">Персональные данные Вашего кота</legend>
               <div class="page-form-wrapper cat-data__wrapper">
-                <label class="line-item cat-data__caption"><span class="line-item__title--name">Имя:*</span>
-                  <input type="text" class="form-field cat-data__field  cat-data__field--name" name="cat-name" placeholder="Барсик" required>
+                <label class="line-item cat-data__caption"><span class="line-item__title line-item__title--name">Имя:*</span>
+                  <input type="text" class="form-field form-field--required cat-data__field  cat-data__field--name " name="cat-name" placeholder="Барсик">
                 </label>
-                <label class="line-item cat-data__caption"><span class="line-item__title--weight">Вес (кг):*</span>
-                  <input type="text" class="form-field cat-data__field cat-data__field--weight" name="cat-weight" placeholder="7" required>
+                <label class="line-item cat-data__caption"><span class="line-item__title line-item__title--weight">Вес (кг):*</span>
+                  <input type="text" class="form-field form-field--required cat-data__field cat-data__field--weight" name="cat-weight" placeholder="7">
                 </label>
-                <label class="line-item cat-data__caption"><span class="line-item__title--age">Возраст (лет):</span>
+                <label class="line-item cat-data__caption"><span class="line-item__title line-item__title--age">Возраст (лет):</span>
                   <input type="text" class="form-field cat-data__field cat-data__field--age" name="cat-age" placeholder="7">
                 </label>
               </div>
@@ -94,15 +91,15 @@
               <legend class="group-heading owner-data__heading">Контактные данные (владельца кота)</legend>
               <div class="owner-data__wrapper">
                 <label class="line-item owner-data__caption">
-                  <span class="line-item__title--email">E-mail:*</span>
-                  <input type="email" class="form-field line-item__owner-field line-item__owner-field--email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+                  <span class="line-item__title line-item__title--email">E-mail:*</span>
+                  <input type="email" class="form-field form-field--required line-item__owner-field line-item__owner-field--email" name="owner-email" placeholder="kuklachev@gmail.com">
                   <svg class="line-item__icon line-item__icon--mail" width="17" height="13" x="0px" y="0px">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </label>
                 <label class="line-item owner-data__caption">
-                  <span class="line-item__title--phone">Телефон:*</span>
-                  <input type="tel" class="form-field line-item__owner-field line-item__owner-field--phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+                  <span class="line-item__title line-item__title--phone">Телефон:*</span>
+                  <input type="tel" class="form-field form-field--required line-item__owner-field line-item__owner-field--phone" name="owner-phone" placeholder="8 (960) 900-60-90">
                   <svg class="line-item__icon line-item__icon--phone" width="20" height="20">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
@@ -222,5 +219,6 @@
     </footer>
     <script src="js/picturefill.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/page-form.js"></script>
   </body>
 </html>
