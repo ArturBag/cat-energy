@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
@@ -8,6 +9,7 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
@@ -50,13 +52,18 @@
         </div>
         <div class="page-main__wrapper-intro">
           <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@1x.webp 2x">
 
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 1300px)"
+              srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" class="page-main__intro-image" width="280" height="271" alt="Кошачье питание со вкусом курицы">
+            <img src="img/index-can-mobile@1x.png"
+              srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" class="page-main__intro-image"
+              width="280" height="271" alt="Кошачье питание со вкусом курицы">
           </picture>
           <a href="form.html" class="button page-main__intro-button">Подобрать программу</a>
         </div>
@@ -78,39 +85,43 @@
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес</p>
           <a href="catalog/slim.html" class="target-item__link">Каталог Slim</a>
         </div>
-          <div class="target-item targets__target targets__target--growth">
-            <h3 class="target-item__heading target-item__heading--growth">
-              <span class="target-item__icon target-item__icon--growth">
-                <svg class="target-item__image target-item__image--growth" width="134" height="56">
-                  <use xlink:href="#icon-cat-pro"></use>
-                </svg>
-              </span>
-              Набор массы</h3>
-            <p class="target-item__text target-item__text--growth">Заработать авторитет среди дворовых котов и даже
-              собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="catalog/pro.html" class="target-item__link">Каталог Pro</a>
-          </div>
+        <div class="target-item targets__target targets__target--growth">
+          <h3 class="target-item__heading target-item__heading--growth">
+            <span class="target-item__icon target-item__icon--growth">
+              <svg class="target-item__image target-item__image--growth" width="134" height="56">
+                <use xlink:href="#icon-cat-pro"></use>
+              </svg>
+            </span>
+            Набор массы</h3>
+          <p class="target-item__text target-item__text--growth">Заработать авторитет среди дворовых котов и даже
+            собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a href="catalog/pro.html" class="target-item__link">Каталог Pro</a>
         </div>
-      </section>
-      <section class="page-main__advantages advantages">
-        <div class="main-section-wrapper advantages__wrapper">
-          <h2 class="section-heading advantages__heading">Как это работает</h2>
-          <ul class="advantages__list advantages-list">
-            <li class="advantage advantages-list__item advantages-list__item--natural">
-              <span class="advantages-list__natural-text">Функциональное питание содержит только полезные питательные вещества.</span>
-            </li>
-            <li class="advantage advantages-list__item advantages-list__item--powder">
-              <span class="advantages-list__powder-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
-            </li>
-            <li class="advantage advantages-list__item advantages-list__item--dish">
-              <span class="advantages-list__dish-text">Замените один-два приема обычной еды на наше функциональное питание.</span>
-            </li>
-            <li class="advantage advantages-list__item advantages-list__item--time">
-              <span class="advantages-list__time-text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
+    </section>
+    <section class="page-main__advantages advantages">
+      <div class="main-section-wrapper advantages__wrapper">
+        <h2 class="section-heading advantages__heading">Как это работает</h2>
+        <ul class="advantages__list advantages-list">
+          <li class="advantage advantages-list__item advantages-list__item--natural">
+            <span class="advantages-list__natural-text">Функциональное питание содержит только полезные питательные
+              вещества.</span>
+          </li>
+          <li class="advantage advantages-list__item advantages-list__item--powder">
+            <span class="advantages-list__powder-text">Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.</span>
+          </li>
+          <li class="advantage advantages-list__item advantages-list__item--dish">
+            <span class="advantages-list__dish-text">Замените один-два приема обычной еды на наше функциональное
+              питание.</span>
+          </li>
+          <li class="advantage advantages-list__item advantages-list__item--time">
+            <span class="advantages-list__time-text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего
+              питомца!</span>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="page-main__example example">
       <h2 class="section-heading example__heading">Живой пример</h2>
       <div class="example__main-wrapper">
@@ -137,41 +148,46 @@
                 </p>
               </div>
               <b class="example__expenses result-expenses"><span>Затраты на питание:</span><span> 15 000 руб.</span></b>
-              </div>
             </div>
-            <div class="example__result">
-              <p class="example__result-image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+          </div>
+          <div class="example__result">
+            <p class="example__result-image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" class="example__image example__image--before" width="320" height="240"
-                  alt="Было до приема питания">
-                </picture>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x"
+                  class="example__image example__image--before" width="320" height="240" alt="Было до приема питания">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" class="example__image example__image--after" width="320" height="240"
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x"
+                  class="example__image example__image--after" width="320" height="240"
                   alt="Стало после приема питания">
-                </picture>
-              </p>
-              <div class="example__test-wrapper">
-                <div class="example__test">
-                  <button class="example__test-button example__test-button--prev" type="button">Было</button>
-                  <div class="example-test__decoration">
-                      <div class="example__range-toggle" aria-label="Переключение результата" tabindex="0"></div>
-                  </div>
-                  <button class="example__test-button example__test-button--next" type="button">Стало</button>
+              </picture>
+            </p>
+            <div class="example__test-wrapper">
+              <div class="example__test">
+                <button class="example__test-button example__test-button--prev" type="button">Было</button>
+                <div class="example__test-decoration">
+                  <div class="example__range-toggle" aria-label="Переключение результата" tabindex="0"></div>
                 </div>
+                <button class="example__test-button example__test-button--next" type="button">Стало</button>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
@@ -195,15 +211,20 @@
         </div>
         <div class="location__map">
           <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" class="location__map-elem map" width="320" height="362" alt="Карта">
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x"
+              class="location__map-elem map" width="320" height="362" alt="Карта">
           </picture>
-          <iframe class="location__map-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.495198090856!2d30.321737667804115!3d59.937422606046425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1558896080283!5m2!1sru!2sua" width="600" height="450" style="border:0" allowfullscreen></iframe>
+          <iframe class="location__map-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.495198090856!2d30.321737667804115!3d59.937422606046425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1558896080283!5m2!1sru!2sua"
+            width="600" height="450" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -256,4 +277,5 @@
   <script src="js/picturefill.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

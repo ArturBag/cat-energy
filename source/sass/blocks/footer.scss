@@ -35,6 +35,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    padding-bottom: 30px;
+  }
+
   .footer-wrapper {
     @include tablet-content-size();
 

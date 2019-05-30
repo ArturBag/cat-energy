@@ -1,3 +1,7 @@
+.header {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .header__items-wrapper {
   @include mobile-content-size();
 
@@ -59,6 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    border-bottom: 0;
     width: auto;
     margin: 0;
   }
