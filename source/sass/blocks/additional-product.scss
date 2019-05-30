@@ -1,5 +1,9 @@
 .additional-product {
   border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .additional-product__heading {

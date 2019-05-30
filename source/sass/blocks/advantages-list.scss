@@ -59,7 +59,7 @@
   }
 }
 
-.advantages-list__time--text br {
+.advantages-list__time-text br {
   display: none;
 }
 
@@ -122,17 +122,17 @@
     line-height: 24px;
   }
 
-  .advantages-list__natural--text,
-  .advantages-list__dish--text,
-  .advantages-list__time--text {
+  .advantages-list__natural-text,
+  .advantages-list__dish-text,
+  .advantages-list__time-text {
     width: 76%;
   }
 
-  .advantages-list__powder--text {
+  .advantages-list__powder-text {
     width: 69%;
   }
 
-  .advantages-list__time--text br {
+  .advantages-list__time-text br {
     display: block;
   }
 }

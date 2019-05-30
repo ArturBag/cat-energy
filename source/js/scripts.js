@@ -1,29 +1,26 @@
 var mobileMenu = document.querySelector(".header__nav-menu"),
-  btnMenu = document.querySelector(".header-menu__button"),
-  btnMenuClose = document.querySelector(".header-menu__button--close"),
-  btnMenuOpen = document.querySelector(".header-menu__button--open"),
+  btnMenu = document.querySelector(".header__menu-button"),
   mapPicture = document.querySelector(".map"),
   form = document.querySelector(".form"),
-  catNameField = document.querySelector(".cat-data__field--name"),
-  catWeightField = document.querySelector(".cat-data__field--weight"),
-  catOwnerEmail = document.querySelector(".line-item__owner-field--email"),
-  catOwnerPhone = document.querySelector(".line-item__owner-field--phone");
+  textfields = document.querySelectorAll(".form-field--required"),
+  btnTitle = document.querySelector(".header__menu-button-title"),
+  header = document.querySelector(".header");
 
 mobileMenu.classList.add("header__nav-menu--hidden");
-btnMenuOpen.classList.add("header-menu__button--show");
+btnMenu.classList.add("header__menu-button--open");
 mapPicture.style.display = "none";
 
-btnMenuOpen.addEventListener("click", function (evt) {
+btnMenu.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mobileMenu.classList.remove("header__nav-menu--hidden");
-  btnMenuOpen.classList.remove("header-menu__button--show");
-  btnMenuClose.classList.add("header-menu__button--show");
+  btnMenu.classList.toggle("header__menu-button--close");
+  if (mobileMenu.classList.contains("header__nav-menu--hidden")) {
+    mobileMenu.classList.remove("header__nav-menu--hidden");
+    btnTitle.innerText = "Закрыть меню";
+    header.style = "border-bottom:none";
+  }
+  else {
+    mobileMenu.classList.add("header__nav-menu--hidden");
+    btnTitle.innerText = "Открыть меню";
 
-});
-
-btnMenuClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mobileMenu.classList.add("header__nav-menu--hidden");
-  btnMenuOpen.classList.add("header-menu__button--show");
-  btnMenuClose.classList.remove("header-menu__button--show");
+  }
 });

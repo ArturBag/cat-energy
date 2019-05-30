@@ -26,32 +26,36 @@
   }
 }
 
-.page-main-intro__heading {
+.page-main__intro-heading {
   @include heading-reset();
 
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   padding-top: 26px;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 23px;
   color: $white-font-color;
 }
 
-.page-main-intro__slogan {
+.page-main__intro-slogan {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+  width: 280px;
+  margin: 0 auto;
   text-transform: uppercase;
   color: $white-font-color;
 }
 
-.page-main-intro__image {
+.page-main__intro-image {
   display: block;
   margin: 0 auto;
   margin-bottom: 3px;
 }
 
-.page-main-intro__button {
+.page-main__intro-button {
   width: 100%;
   padding-top: 12px;
 
@@ -70,6 +74,11 @@
     background-color: #ffffff;
     background-image: none;
     padding-bottom: 0;
+  }
+
+  .page-main__intro-content {
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .page-main__intro-wrapper {
@@ -92,8 +101,10 @@
     position: relative;
   }
 
-  .page-main-intro__heading {
-    width: 85%;
+  .page-main__intro-heading {
+    width: 427px;
+    text-align: left;
+    margin: 0;
     color: #111111;
     font-size: 60px;
     font-weight: 400;
@@ -102,14 +113,14 @@
     margin-bottom: 41px;
   }
 
-  .page-main-intro__slogan {
+  .page-main__intro-slogan {
     color: #111111;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
   }
 
-  .page-main-intro__image {
+  .page-main__intro-image {
     order: 2;
     margin: 0;
     margin-bottom: 0;
@@ -118,7 +129,7 @@
     max-width: none;
   }
 
-  .page-main-intro__button {
+  .page-main__intro-button {
     order: 1;
     width: 245px;
     height: 52px;
@@ -152,7 +163,7 @@
     width: 36%;
   }
 
-  .page-main-intro__heading {
+  .page-main__intro-heading {
     width: 100%;
     margin: 0;
     padding-top: 79px;
@@ -173,12 +184,12 @@
     margin-left: -55px;
   }
 
-  .page-main-intro__image {
+  .page-main__intro-image {
     width: 552px;
     height: 499px;
   }
 
-  .page-main-intro__button {
+  .page-main__intro-button {
     top: 63%;
     left: 119px;
   }
