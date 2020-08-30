@@ -17,6 +17,9 @@ var include = require("posthtml-include");
 var minify = require("gulp-minify");
 var del = require("del");
 var server = require("browser-sync").create();
+var ghpages = require('gh-pages');
+
+ghpages.publish('build', function(err) {});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
